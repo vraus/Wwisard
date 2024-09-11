@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "1849502000",
+    "Type": "Event",
+    "GUID": "{21F30C64-56CE-4846-9530-C7AA5224C5C1}",
+    "Language": "SFX",
+    "Hash": "{EC18C7E6-5A4F-B33F-64AF-7D6EC75BC365}",
+    "ObjectPath": "AmbientMusic",
+    "ShortName": "AmbientMusic",
+    "Path": "Event/AmbientMusic.bnk",
+    "Media": [
+     {
+      "Id": "583460684",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT_.wav",
+      "Path": "Media/583460684.wem",
+      "CachePath": "SFX/SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT__818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1849502000",
+      "Name": "AmbientMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\AmbientMusic",
+      "GUID": "{21F30C64-56CE-4846-9530-C7AA5224C5C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "331.83636",
+      "DurationMax": "331.83636",
+      "MediaRefs": [
+       {
+        "Id": "583460684"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D4CFE8E1-044E-D3F0-B73F-13C8639AC28C}"
+ }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{C79E92D8-BF55-14AC-97C5-D5E36299D9BA}">
+			<ObjectPath>BulletHit</ObjectPath>
+			<ShortName>BulletHit</ShortName>
+			<Path>Event/BulletHit.bnk</Path>
+			<Media>
+				<File Id="732227477" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>bullet-hit-metal-84818.wav</ShortName>
+					<Path>Media/732227477.wem</Path>
+					<CachePath>SFX/bullet-hit-metal-84818_276A84B2.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
+					<MediaRefs>
+						<MediaRef Id="732227477"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{06E48367-5011-8D75-B843-7DBB21785ACE}</FileHash>
+</SoundBanksInfo>

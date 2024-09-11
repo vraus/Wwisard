@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{B58F1F2C-0BEF-C5BB-51FD-F11F13391516}">
+			<ObjectPath>FootStep</ObjectPath>
+			<ShortName>FootStep</ShortName>
+			<Path>Event/FootStep.bnk</Path>
+			<Media>
+				<File Id="538281946" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>footstep-1-83098.wav</ShortName>
+					<Path>Media/538281946.wem</Path>
+					<CachePath>SFX/footstep-1-83098_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" DurationType="OneShot" DurationMin="0.48" DurationMax="0.48">
+					<MediaRefs>
+						<MediaRef Id="538281946"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{38FB2DF2-5E55-A504-05B1-C9D9CDFFE35B}</FileHash>
+</SoundBanksInfo>

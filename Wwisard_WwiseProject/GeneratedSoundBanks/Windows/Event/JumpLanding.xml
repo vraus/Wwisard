@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2020998190" Type="Event" GUID="{9D462B41-38B0-48D7-B570-355FB57A16AD}" Language="SFX" Hash="{63572BD8-A608-4B23-5343-0DC671E72C02}">
+			<ObjectPath>JumpLanding</ObjectPath>
+			<ShortName>JumpLanding</ShortName>
+			<Path>Event/JumpLanding.bnk</Path>
+			<Media>
+				<File Id="346152113" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>thump-105302.wav</ShortName>
+					<Path>Media/346152113.wem</Path>
+					<CachePath>SFX/thump-105302_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2020998190" Name="JumpLanding" ObjectPath="\Events\Default Work Unit\JumpLanding" GUID="{9D462B41-38B0-48D7-B570-355FB57A16AD}" DurationType="OneShot" DurationMin="1.464" DurationMax="1.464">
+					<MediaRefs>
+						<MediaRef Id="346152113"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{1873F06D-6B04-906D-08A0-F41B04412489}</FileHash>
+</SoundBanksInfo>

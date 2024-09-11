@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<SoundBanks>
+		<SoundBank Id="2122995345" Type="Event" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" Language="SFX" Hash="{9FFF5777-A539-1B15-E36F-AD387238A7B2}">
+			<ObjectPath>OpenDoor</ObjectPath>
+			<ShortName>OpenDoor</ShortName>
+			<Path>Event/OpenDoor.bnk</Path>
+			<Media>
+				<File Id="724664712" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sliding-door-opening-and-closing-6467.wav</ShortName>
+					<Path>Media/724664712.wem</Path>
+					<CachePath>SFX/sliding-door-opening-and-closing-6467_22F49C30.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2122995345" Name="OpenDoor" ObjectPath="\Events\Default Work Unit\OpenDoor" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" DurationType="OneShot" DurationMin="1.9076208" DurationMax="1.9076208">
+					<MediaRefs>
+						<MediaRef Id="724664712"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{79119C50-BC1F-4B15-09F3-375EC45CBA00}</FileHash>
+</SoundBanksInfo>

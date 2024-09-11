@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2020998190",
+    "Type": "Event",
+    "GUID": "{9D462B41-38B0-48D7-B570-355FB57A16AD}",
+    "Language": "SFX",
+    "Hash": "{63572BD8-A608-4B23-5343-0DC671E72C02}",
+    "ObjectPath": "JumpLanding",
+    "ShortName": "JumpLanding",
+    "Path": "Event/JumpLanding.bnk",
+    "Media": [
+     {
+      "Id": "346152113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "thump-105302.wav",
+      "Path": "Media/346152113.wem",
+      "CachePath": "SFX/thump-105302_818F3B66.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2020998190",
+      "Name": "JumpLanding",
+      "ObjectPath": "\\Events\\Default Work Unit\\JumpLanding",
+      "GUID": "{9D462B41-38B0-48D7-B570-355FB57A16AD}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.464",
+      "DurationMax": "1.464",
+      "MediaRefs": [
+       {
+        "Id": "346152113"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{897BE1EB-16A5-C4EB-601D-F96B26441F2D}"
+ }
+}

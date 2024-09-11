@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{5D2272A3-0FA5-247C-991E-020534B59524}">
+			<ObjectPath>FireWeapon</ObjectPath>
+			<ShortName>FireWeapon</ShortName>
+			<Path>Event/FireWeapon.bnk</Path>
+			<Media>
+				<File Id="34711518" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>FirstPersonTemplateWeaponFire02.WAV</ShortName>
+					<Path>Media/34711518.wem</Path>
+					<CachePath>SFX/FirstPersonTemplateWeaponFire02_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1283499417" Name="FireWeapon" ObjectPath="\Events\Default Work Unit\FireWeapon" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" DurationType="OneShot" DurationMin="1.7021542" DurationMax="1.7021542">
+					<MediaRefs>
+						<MediaRef Id="34711518"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{C4E552C9-774D-617C-8482-0270F3F74D4A}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{7231528F-FDAC-467F-AE72-92066C4EC5C0}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{0F1927E1-83F4-43A4-B71F-4540843220B5}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="493417818" Name="Music Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Music Audio Bus" GUID="{A17D8076-A924-4863-B7C6-62955EAF5FD1}"/>
+				<Bus Id="527200915" Name="FX Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\FX Audio Bus" GUID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}"/>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{E1E80251-2EF9-E3F7-0FFA-4D3B903BA213}">
+			<ObjectPath>ChafermBeep</ObjectPath>
+			<ShortName>ChafermBeep</ShortName>
+			<Path>Event/ChafermBeep.bnk</Path>
+			<Media>
+				<File Id="233372072" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>one_beep-99630.wav</ShortName>
+					<Path>Media/233372072.wem</Path>
+					<CachePath>SFX/one_beep-99630_3F6A6223.wem</CachePath>
+				</File>
+				<File Id="700142031" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>electric-sparks-6130.wav</ShortName>
+					<Path>Media/700142031.wem</Path>
+					<CachePath>SFX/electric-sparks-6130_FD292F9C.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
+					<MediaRefs>
+						<MediaRef Id="233372072"/>
+						<MediaRef Id="700142031"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1849502000" Type="Event" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" Language="SFX" Hash="{EC18C7E6-5A4F-B33F-64AF-7D6EC75BC365}">
+			<ObjectPath>AmbientMusic</ObjectPath>
+			<ShortName>AmbientMusic</ShortName>
+			<Path>Event/AmbientMusic.bnk</Path>
+			<Media>
+				<File Id="583460684" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT_.wav</ShortName>
+					<Path>Media/583460684.wem</Path>
+					<CachePath>SFX/SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT__818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1849502000" Name="AmbientMusic" ObjectPath="\Events\Default Work Unit\AmbientMusic" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" DurationType="OneShot" DurationMin="331.83636" DurationMax="331.83636">
+					<MediaRefs>
+						<MediaRef Id="583460684"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{B58F1F2C-0BEF-C5BB-51FD-F11F13391516}">
+			<ObjectPath>FootStep</ObjectPath>
+			<ShortName>FootStep</ShortName>
+			<Path>Event/FootStep.bnk</Path>
+			<Media>
+				<File Id="538281946" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>footstep-1-83098.wav</ShortName>
+					<Path>Media/538281946.wem</Path>
+					<CachePath>SFX/footstep-1-83098_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" DurationType="OneShot" DurationMin="0.48" DurationMax="0.48">
+					<MediaRefs>
+						<MediaRef Id="538281946"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2020998190" Type="Event" GUID="{9D462B41-38B0-48D7-B570-355FB57A16AD}" Language="SFX" Hash="{63572BD8-A608-4B23-5343-0DC671E72C02}">
+			<ObjectPath>JumpLanding</ObjectPath>
+			<ShortName>JumpLanding</ShortName>
+			<Path>Event/JumpLanding.bnk</Path>
+			<Media>
+				<File Id="346152113" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>thump-105302.wav</ShortName>
+					<Path>Media/346152113.wem</Path>
+					<CachePath>SFX/thump-105302_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2020998190" Name="JumpLanding" ObjectPath="\Events\Default Work Unit\JumpLanding" GUID="{9D462B41-38B0-48D7-B570-355FB57A16AD}" DurationType="OneShot" DurationMin="1.464" DurationMax="1.464">
+					<MediaRefs>
+						<MediaRef Id="346152113"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2122995345" Type="Event" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" Language="SFX" Hash="{9FFF5777-A539-1B15-E36F-AD387238A7B2}">
+			<ObjectPath>OpenDoor</ObjectPath>
+			<ShortName>OpenDoor</ShortName>
+			<Path>Event/OpenDoor.bnk</Path>
+			<Media>
+				<File Id="724664712" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>sliding-door-opening-and-closing-6467.wav</ShortName>
+					<Path>Media/724664712.wem</Path>
+					<CachePath>SFX/sliding-door-opening-and-closing-6467_22F49C30.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2122995345" Name="OpenDoor" ObjectPath="\Events\Default Work Unit\OpenDoor" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" DurationType="OneShot" DurationMin="1.9076208" DurationMax="1.9076208">
+					<MediaRefs>
+						<MediaRef Id="724664712"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2139343573" Type="Event" GUID="{772C47DF-A728-4DCB-93D8-2DE78621CD7C}" Language="SFX" Hash="{D014960F-A712-10A9-7427-40D6B06812D4}">
+			<ObjectPath>PickupWeapon</ObjectPath>
+			<ShortName>PickupWeapon</ShortName>
+			<Path>Event/PickupWeapon.bnk</Path>
+			<Media>
+				<File Id="318083971" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>pickup_item-64282.wav</ShortName>
+					<Path>Media/318083971.wem</Path>
+					<CachePath>SFX/pickup_item-64282_A0A54593.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2139343573" Name="PickupWeapon" ObjectPath="\Events\Default Work Unit\PickupWeapon" GUID="{772C47DF-A728-4DCB-93D8-2DE78621CD7C}" DurationType="OneShot" DurationMin="0.65628624" DurationMax="0.65628624">
+					<MediaRefs>
+						<MediaRef Id="318083971"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{C79E92D8-BF55-14AC-97C5-D5E36299D9BA}">
+			<ObjectPath>BulletHit</ObjectPath>
+			<ShortName>BulletHit</ShortName>
+			<Path>Event/BulletHit.bnk</Path>
+			<Media>
+				<File Id="732227477" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>bullet-hit-metal-84818.wav</ShortName>
+					<Path>Media/732227477.wem</Path>
+					<CachePath>SFX/bullet-hit-metal-84818_276A84B2.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
+					<MediaRefs>
+						<MediaRef Id="732227477"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B041696E-511F-6301-483C-4C75263CB5D8}</FileHash>
+</SoundBanksInfo>

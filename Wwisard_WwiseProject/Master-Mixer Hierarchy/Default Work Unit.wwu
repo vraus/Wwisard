@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{0F1927E1-83F4-43A4-B71F-4540843220B5}" WorkUnitID="{E6D85290-08D2-41D8-B341-918036A22BD5}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{0F1927E1-83F4-43A4-B71F-4540843220B5}" WorkUnitID="{E6D85290-08D2-41D8-B341-918036A22BD5}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Music Audio Bus" ID="{A17D8076-A924-4863-B7C6-62955EAF5FD1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{0F1927E1-83F4-43A4-B71F-4540843220B5}" WorkUnitID="{E6D85290-08D2-41D8-B341-918036A22BD5}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

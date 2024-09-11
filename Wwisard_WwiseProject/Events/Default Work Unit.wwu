@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ABCD0C2B-4601-49EB-B55C-F82A72E71681}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{ABCD0C2B-4601-49EB-B55C-F82A72E71681}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="AmbientMusic" ID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{0944B8BC-42E0-4523-BF09-11B692036249}" ShortID="125417107">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SciFiMusic" ID="{9027CAB2-6F14-458C-95E5-179C2063D70F}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FireWeapon" ID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{1ACCF97A-8696-4311-B372-ABB8FA1E0722}" ShortID="193425026">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FireWeapon" ID="{7DCF9842-4256-4FFF-92D9-70454BFBB98B}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="OpenDoor" ID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{13425E6F-4178-43DC-9BA7-442642C6D647}" ShortID="483461301">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sliding Door" ID="{666651B7-374E-44AA-BF5D-3B7ED6F430FB}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FootStep" ID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{277A88D8-88D4-4F9C-8ED0-FB2700F6D5E7}" ShortID="938295119">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footstep" ID="{A70AFD15-038A-4CE1-A125-A51C73292108}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="JumpLanding" ID="{9D462B41-38B0-48D7-B570-355FB57A16AD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{3022A4A9-E26C-4F61-8F19-CF6D9144D2AC}" ShortID="274989454">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="JumpLanding" ID="{301A4271-31B8-4381-AA67-0A4CF4BAA502}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ChafermBeep" ID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{88D3FB4F-0619-4A68-92A5-6ABDE2740B1F}" ShortID="474008333">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ChafermBeep" ID="{7DA01297-094A-4F43-BD69-D6D36BFDD27D}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7D28CE4A-6386-4E73-91E4-3310005B5525}" ShortID="587441952">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ElectricSparks" ID="{E49F1D89-B1E6-4CC9-9DBD-7AF93CDA67A7}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PickupWeapon" ID="{772C47DF-A728-4DCB-93D8-2DE78621CD7C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{F7D0C842-5FFD-485B-A355-52018840AD3F}" ShortID="946237929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupItem" ID="{E0CE45F2-5671-4FF8-A7F2-290B5C4593C8}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BulletHit" ID="{3185C608-F2C4-479F-9882-F5037C32C36F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{FCDABFE5-ED49-4A85-AD7A-1AE955F9C1CA}" ShortID="1067154716">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BulletHit" ID="{90A416E2-0E9F-4022-934A-1D3A13D6F379}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

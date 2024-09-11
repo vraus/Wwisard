@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "150",
+  "SoundBanks": [
+   {
+    "Id": "2139343573",
+    "Type": "Event",
+    "GUID": "{772C47DF-A728-4DCB-93D8-2DE78621CD7C}",
+    "Language": "SFX",
+    "Hash": "{D014960F-A712-10A9-7427-40D6B06812D4}",
+    "ObjectPath": "PickupWeapon",
+    "ShortName": "PickupWeapon",
+    "Path": "Event/PickupWeapon.bnk",
+    "Media": [
+     {
+      "Id": "318083971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "pickup_item-64282.wav",
+      "Path": "Media/318083971.wem",
+      "CachePath": "SFX/pickup_item-64282_A0A54593.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2139343573",
+      "Name": "PickupWeapon",
+      "ObjectPath": "\\Events\\Default Work Unit\\PickupWeapon",
+      "GUID": "{772C47DF-A728-4DCB-93D8-2DE78621CD7C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.65628624",
+      "DurationMax": "0.65628624",
+      "MediaRefs": [
+       {
+        "Id": "318083971"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B21BE2A9-360F-D714-29EE-2BFE88A66EE8}"
+ }
+}
