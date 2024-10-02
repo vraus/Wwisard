@@ -106,7 +106,7 @@ public:
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 	virtual void PostEditUndo() override;
 	virtual void PreEditUndo() override;
-	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction);
+	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction) override;
 
 	/** Tracks whether the user is interacting with a UI element in the details panel (e.g. a slider) */
 	bool UserInteractionInProgress = false;
@@ -118,7 +118,7 @@ public:
 	void UpdateText(bool Visible);
 	/** Align all of the text components (1 for each face) along one of the edges on the face */
 	void UpdateTextPositions() const;
-	void SurfacePropertiesChanged();
+	virtual void SurfacePropertiesChanged() override;
 	void DestroyTextVisualizers();
 
 	bool WasSelected;

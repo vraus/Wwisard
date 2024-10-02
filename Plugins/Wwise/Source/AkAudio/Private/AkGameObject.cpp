@@ -72,13 +72,20 @@ public:
 };
 
 UAkGameObject::UAkGameObject(const class FObjectInitializer& ObjectInitializer) :
-Super(ObjectInitializer)
+	Super(ObjectInitializer)
 {
 	bEventPosted = false;
+}
+
+void UAkGameObject::PostLoad()
+{
+	Super::PostLoad();
+
 	const UAkSettings* AkSettings = GetDefault<UAkSettings>();
-	if(LIKELY(AkSettings))
+	if (!bAttenuationScalingMigrated && LIKELY(AkSettings))
 	{
-		AttenuationScalingFactor = AkSettings->DefaultScalingFactor;
+		bAttenuationScalingMigrated = true;
+		bOverrideAttenuationScalingFactor = AkSettings->DefaultScalingFactor != AttenuationScalingFactor;
 	}
 }
 
@@ -89,7 +96,14 @@ bool UAkGameObject::SetAttenuationScalingFactor()
 	FAkAudioDevice* AudioDevice = FAkAudioDevice::Get();
 	if (AudioDevice)
 	{
-		result = AudioDevice->SetAttenuationScalingFactor(this, AttenuationScalingFactor);
+		if (bOverrideAttenuationScalingFactor)
+		{
+			result = AudioDevice->SetAttenuationScalingFactor(this, AttenuationScalingFactor);
+		}
+		else if (auto AkSettings = GetDefault<UAkSettings>())
+		{
+			result = AudioDevice->SetAttenuationScalingFactor(this, AkSettings->DefaultScalingFactor);
+		}
 	}
 
 	return result == AK_Success;
@@ -258,3 +272,72 @@ bool UAkGameObject::HasActiveEvents() const
 	auto CallbackManager = FAkComponentCallbackManager::GetInstance();
 	return (CallbackManager != nullptr) && CallbackManager->HasActiveEvents(GetAkGameObjectID());
 }
+
+
+void UAkGameObject::SetOverrideAttenuationScalingFactor(bool bInOverrideAttenuationScalingFactor)
+{
+	if (bOverrideAttenuationScalingFactor != bInOverrideAttenuationScalingFactor)
+	{
+		bOverrideAttenuationScalingFactor = bInOverrideAttenuationScalingFactor;
+		SetAttenuationScalingFactor();
+	}
+}
+
+void UAkGameObject::SetAttenuationScalingFactor(float InAttenuationScalingFactor)
+{
+	if (InAttenuationScalingFactor <= 0.f)
+	{
+		UE_LOG(LogAkAudio, Warning, TEXT("UAkGameObject::SetAttenuationScalingFactor: Attenuation scaling factor of %s is zero or a negative number."), *GetName());
+	}
+	else
+	{
+		if (AttenuationScalingFactor != InAttenuationScalingFactor)
+		{
+			AttenuationScalingFactor = InAttenuationScalingFactor;
+			if (bOverrideAttenuationScalingFactor)
+			{
+				SetAttenuationScalingFactor();
+			}
+		}
+	}
+}
+
+#if WITH_EDITOR
+void UAkGameObject::PreEditChange(FProperty* PropertyAboutToChange)
+{
+	if (PropertyAboutToChange != nullptr)
+	{
+		if (PropertyAboutToChange->NamePrivate == GET_MEMBER_NAME_CHECKED(UAkGameObject, AttenuationScalingFactor))
+		{
+			PreviousAttenuationScalingFactor = AttenuationScalingFactor;
+		}
+	}
+
+	Super::PreEditChange(PropertyAboutToChange);
+}
+
+void UAkGameObject::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
+{
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+
+	if (PropertyChangedEvent.Property)
+	{
+		if (PropertyChangedEvent.Property->GetFName() == GET_MEMBER_NAME_CHECKED(UAkGameObject, AttenuationScalingFactor))
+		{
+			if (AttenuationScalingFactor <= 0.f)
+			{
+				AttenuationScalingFactor = PreviousAttenuationScalingFactor;
+				UE_LOG(LogAkAudio, Warning, TEXT("UAkGameObject::PostEditChangeProperty: Attenuation scaling factor of %s is zero or a negative number."), *GetName());
+			}
+			else
+			{
+				SetAttenuationScalingFactor();
+			}
+		}
+		if (PropertyChangedEvent.Property->GetFName() == GET_MEMBER_NAME_CHECKED(UAkGameObject, bOverrideAttenuationScalingFactor))
+		{
+			SetAttenuationScalingFactor();
+		}
+	}
+}
+#endif

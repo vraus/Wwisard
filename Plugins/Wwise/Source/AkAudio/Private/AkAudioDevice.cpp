@@ -3686,16 +3686,21 @@ void FAkAudioDevice::CancelEventCallbackDelegate(const FOnAkPostEventCallback& i
 AKRESULT FAkAudioDevice::SetAttenuationScalingFactor(AActor* Actor, float ScalingFactor)
 {
 	AKRESULT eResult = AK_Fail;
-	if ( m_bSoundEngineInitialized )
-	{
-		auto* SoundEngine = IWwiseSoundEngineAPI::Get();
-		if (UNLIKELY(!SoundEngine)) return AK_NotInitialized;
 
-		AkGameObjectID GameObjID = DUMMY_GAMEOBJ;
-		eResult = GetGameObjectID( Actor, GameObjID );
-		if( eResult == AK_Success )
+	if ( m_bSoundEngineInitialized && Actor )
+	{
+		UWorld* World = Actor->GetWorld();
+		if (World && ShouldNotifySoundEngine(World->WorldType))
 		{
-			eResult = SoundEngine->SetScalingFactor(GameObjID, ScalingFactor);
+			auto* SoundEngine = IWwiseSoundEngineAPI::Get();
+			if (UNLIKELY(!SoundEngine)) return AK_NotInitialized;
+
+			AkGameObjectID GameObjID = DUMMY_GAMEOBJ;
+			eResult = GetGameObjectID(Actor, GameObjID);
+			if (eResult == AK_Success)
+			{
+				eResult = SoundEngine->SetScalingFactor(GameObjID, ScalingFactor);
+			}
 		}
 	}
 
@@ -3707,10 +3712,14 @@ AKRESULT FAkAudioDevice::SetAttenuationScalingFactor(UAkGameObject* AkGameObject
 	AKRESULT eResult = AK_Fail;
 	if ( m_bSoundEngineInitialized && AkGameObject)
 	{
-		auto* SoundEngine = IWwiseSoundEngineAPI::Get();
-		if (UNLIKELY(!SoundEngine)) return AK_NotInitialized;
+		UWorld* World = AkGameObject->GetWorld();
+		if (World && ShouldNotifySoundEngine(World->WorldType))
+		{
+			auto* SoundEngine = IWwiseSoundEngineAPI::Get();
+			if (UNLIKELY(!SoundEngine)) return AK_NotInitialized;
 
-		eResult = SoundEngine->SetScalingFactor(AkGameObject->GetAkGameObjectID(), ScalingFactor);
+			eResult = SoundEngine->SetScalingFactor(AkGameObject->GetAkGameObjectID(), ScalingFactor);
+		}
 	}
 	return eResult;
 }

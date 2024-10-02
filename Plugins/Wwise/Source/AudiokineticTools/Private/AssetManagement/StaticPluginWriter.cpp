@@ -221,11 +221,18 @@ namespace StaticPluginWriter_Helper
 
 		TArray<FString> PluginLines;
 
-		for (auto& PluginName : Plugins)
+		const TArray<FString> PluginsToSkip
 		{
 			// Don't include AkAudioInputSourceFactory.h in file because it is already linked in AkAudioInputManager
-			// Don't include AkMeterFX.h because it is alreay included in WwiseSoundEngineAPI
-			if (PluginName.Equals(TEXT("AkAudioInputSource")) || PluginName.Equals(TEXT("AkMeterFX")))
+			TEXT("AkAudioInputSource"),
+			// Don't include AkMeterFX.h because it is already included in WwiseSoundEngineAPI
+			TEXT("AkMeterFX"),
+			// Don't include TencentGME.h because it is already included in the GME Plugin
+			TEXT("TencentGME")
+		};
+		for (auto& PluginName : Plugins)
+		{
+			if (PluginsToSkip.Contains(PluginName))
 			{
 				continue;
 			}

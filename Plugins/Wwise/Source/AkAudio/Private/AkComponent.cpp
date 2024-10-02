@@ -640,30 +640,14 @@ void UAkComponent::BeginPlay()
 	// If spawned inside AkReverbVolume(s), we do not want the fade in effect to kick in.
 	UpdateAkLateReverbComponentList(GetComponentLocation());
 	for (auto& ReverbFadeControl : ReverbFadeControls)
+	{
 		ReverbFadeControl.ForceCurrentToTargetValue();
+	}
 
-	// Call SetAttenuationScalingFactor directly from the parent to make sure it is called at least once.
-	// No need to check the value. AttenuationScalingFactor should always be valid because it is guarded in PostEditChangeProperty.
 	Super::SetAttenuationScalingFactor();
 
 	if (EnableSpotReflectors)
 		AAkSpotReflector::UpdateSpotReflectors(this);
-}
-
-void UAkComponent::SetAttenuationScalingFactor(float Value)
-{
-	if (Value <= 0.f)
-	{
-		UE_LOG(LogAkAudio, Warning, TEXT("UAkComponent::SetAttenuationScalingFactor: Attenuation scaling factor for component %s is zero or a negative number."), *GetName());
-	}
-	else
-	{
-		if (AttenuationScalingFactor != Value)
-		{
-			AttenuationScalingFactor = Value;
-			Super::SetAttenuationScalingFactor();
-		}
-	}
 }
 
 void UAkComponent::OnUpdateTransform(EUpdateTransformFlags UpdateTransformFlags, ETeleportType Teleport)
@@ -1068,19 +1052,6 @@ void UAkComponent::SetEnableSpotReflectors(bool in_enable)
 }
 
 #if WITH_EDITOR
-void UAkComponent::PreEditChange(FProperty* PropertyAboutToChange)
-{
-	if (PropertyAboutToChange != nullptr)
-	{
-		if (PropertyAboutToChange->NamePrivate == GET_MEMBER_NAME_CHECKED(UAkComponent, AttenuationScalingFactor))
-		{
-			PreviousAttenuationScalingFactor = AttenuationScalingFactor;
-		}
-	}
-
-	Super::PreEditChange(PropertyAboutToChange);
-}
-
 void UAkComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
@@ -1092,7 +1063,9 @@ void UAkComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChanged
 			PropertyChangedEvent.ChangeType == EPropertyChangeType::ValueSet)
 		{
 			if (innerRadius > outerRadius)
+			{
 				innerRadius = outerRadius;
+			}
 
 			SetGameObjectRadius(outerRadius, innerRadius);
 		}
@@ -1100,18 +1073,6 @@ void UAkComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChanged
 			PropertyChangedEvent.ChangeType == EPropertyChangeType::ValueSet)
 		{
 			AAkSpotReflector::UpdateSpotReflectors(this);
-		}
-		if (PropertyChangedEvent.Property->GetFName() == GET_MEMBER_NAME_CHECKED(UAkComponent, AttenuationScalingFactor))
-		{
-			if (AttenuationScalingFactor <= 0.f)
-			{
-				AttenuationScalingFactor = PreviousAttenuationScalingFactor;
-				UE_LOG(LogAkAudio, Warning, TEXT("UAkComponent::PostEditChangeProperty: Attenuation scaling factor for component %s is zero or a negative number."), *GetName());
-			}
-			else
-			{
-				Super::SetAttenuationScalingFactor();
-			}
 		}
 	}
 }

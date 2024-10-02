@@ -113,7 +113,10 @@ void UAkRoomComponent::SetTransmissionLoss(float InTransmissionLoss)
 	if (InTransmissionLoss != WallOcclusion)
 	{
 		WallOcclusion = InTransmissionLoss;
-		if (bIsRegisteredWithWwise) UpdateSpatialAudioRoom();
+		if (bIsRegisteredWithWwise)
+		{
+			UpdateSpatialAudioRoom();
+		}
 	}
 }
 
@@ -122,22 +125,9 @@ void UAkRoomComponent::SetAuxSendLevel(float InAuxSendLevel)
 	if (InAuxSendLevel != AuxSendLevel)
 	{
 		AuxSendLevel = InAuxSendLevel;
-		if (bIsRegisteredWithWwise) UpdateSpatialAudioRoom();
-	}
-}
-
-void UAkRoomComponent::SetAttenuationScalingFactor(float InAttenuationScalingFactor)
-{
-	if (InAttenuationScalingFactor <= 0.f)
-	{
-		UE_LOG(LogAkAudio, Warning, TEXT("UAkRoomComponent::SetAttenuationScalingFactor: Attenuation scaling factor for Room %s is zero or a negative number."), *GetRoomName());
-	}
-	else
-	{
-		if (AttenuationScalingFactor != InAttenuationScalingFactor)
+		if (bIsRegisteredWithWwise)
 		{
-			AttenuationScalingFactor = InAttenuationScalingFactor;
-			bAttenuationScalingFactorNeedsUpdate = true;
+			UpdateSpatialAudioRoom();
 		}
 	}
 }
@@ -180,10 +170,13 @@ void UAkRoomComponent::OnRegister()
 	InitializeParent();
 	// We want to add / update the room both in BeginPlay and OnRegister. BeginPlay for aux bus and reverb level assignment, OnRegister for portal room assignment and visualization
 	if (!bIsRegisteredWithWwise)
+	{
 		AddSpatialAudioRoom();
+	}
 	else
+	{
 		UpdateSpatialAudioRoom();
-
+	}
 #if WITH_EDITOR
 	if (GetDefault<UAkSettingsPerUser>()->VisualizeRoomsAndPortals)
 	{
@@ -194,8 +187,8 @@ void UAkRoomComponent::OnRegister()
 
 void UAkRoomComponent::OnUnregister()
 {
-	Super::OnUnregister();
 	RemoveSpatialAudioRoom();
+	Super::OnUnregister();
 }
 
 #if WITH_EDITOR
@@ -225,6 +218,7 @@ void UAkRoomComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
 	ShowRoomsChangedHandle.Reset();
 	ConnectedPortals.Empty();
 	DestroyDrawComponent();
+	Super::OnComponentDestroyed(bDestroyingHierarchy);
 }
 #endif // WITH_EDITOR
 
@@ -242,7 +236,9 @@ void UAkRoomComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, 
 	bool bUpdate = true;
 #if WITH_EDITOR
 	if (AkComponentHelpers::IsInGameWorld(this))
+	{
 		bUpdate = bDynamic;
+	}
 #endif
 	if (bUpdate)
 	{
@@ -277,22 +273,17 @@ void UAkRoomComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, 
 			bReverbZoneNeedsUpdate = false;
 		}
 	}
-
-	if (bAttenuationScalingFactorNeedsUpdate &&
-		SetAttenuationScalingFactor())
-	{
-		bAttenuationScalingFactorNeedsUpdate = false;
-	}
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 }
 
 #if WITH_EDITOR
 void UAkRoomComponent::BeginDestroy()
 {
-	Super::BeginDestroy();
 	if (AkSpatialAudioHelper::GetObjectReplacedEvent())
 	{
 		AkSpatialAudioHelper::GetObjectReplacedEvent()->RemoveAll(this);
 	}
+	Super::BeginDestroy();
 }
 
 void UAkRoomComponent::HandleObjectsReplaced(const TMap<UObject*, UObject*>& ReplacementMap)
@@ -301,9 +292,13 @@ void UAkRoomComponent::HandleObjectsReplaced(const TMap<UObject*, UObject*>& Rep
 	{
 		InitializeParent();
 		if (!bIsRegisteredWithWwise)
+		{
 			AddSpatialAudioRoom();
+		}
 		else
+		{
 			UpdateSpatialAudioRoom();
+		}
 	}
 	if (ReplacementMap.Contains(GeometryComponent))
 	{
@@ -375,6 +370,7 @@ void UAkRoomComponent::OnUpdateTransform(EUpdateTransformFlags UpdateTransformFl
 {
 	Moving = true;
 	SecondsSinceMovement = 0.0f;
+	Super::OnUpdateTransform(UpdateTransformFlags, Teleport);
 }
 
 bool UAkRoomComponent::MoveComponentImpl(
@@ -386,8 +382,9 @@ bool UAkRoomComponent::MoveComponentImpl(
 	ETeleportType Teleport)
 {
 	if (AkComponentHelpers::DoesMovementRecenterChild(this, Parent.Get(), Delta))
+	{
 		Super::MoveComponentImpl(Delta, NewRotation, bSweep, Hit, MoveFlags, Teleport);
-
+	}
 	return false;
 }
 
@@ -408,9 +405,13 @@ void UAkRoomComponent::InitializeParent()
 		if (bodySetup == nullptr || !AkComponentHelpers::HasSimpleCollisionGeometry(bodySetup))
 		{
 			if (UBrushComponent* brush = Cast<UBrushComponent>(Parent))
+			{
 				brush->BuildSimpleBrushCollision();
+			}
 			else
+			{
 				AkComponentHelpers::LogSimpleGeometryWarning(Parent.Get(), this);
+			}
 		}
 	}
 }
@@ -535,8 +536,10 @@ void UAkRoomComponent::AddSpatialAudioRoom()
 			if (AkAudioDevice->AddRoom(this, Params) == AK_Success)
 			{
 				bIsRegisteredWithWwise = true;
-				// Call SetAttenuationScalingFactor directly so the change is done this frame
-				SetAttenuationScalingFactor();
+				if (Params.RoomGameObj_KeepRegistered)
+				{
+					Super::SetAttenuationScalingFactor();
+				}
 			}
 
 			AkAudioDevice->IndexRoom(this);
@@ -736,19 +739,6 @@ void UAkRoomComponent::SetGeometryComponent(UAkAcousticTextureSetComponent* text
 }
 
 #if WITH_EDITOR
-void UAkRoomComponent::PreEditChange(FProperty* PropertyAboutToChange)
-{
-	if (PropertyAboutToChange != nullptr)
-	{
-		if (PropertyAboutToChange->NamePrivate == GET_MEMBER_NAME_CHECKED(UAkRoomComponent, AttenuationScalingFactor))
-		{
-			PreviousAttenuationScalingFactor = AttenuationScalingFactor;
-		}
-	}
-
-	Super::PreEditChange(PropertyAboutToChange);
-}
-
 void UAkRoomComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
 {
 	const FName memberPropertyName = (PropertyChangedEvent.MemberProperty != nullptr) ? PropertyChangedEvent.MemberProperty->GetFName() : NAME_None;
@@ -773,18 +763,6 @@ void UAkRoomComponent::PostEditChangeProperty(FPropertyChangedEvent& PropertyCha
 			TransitionRegionWidth = 0.f;
 
 		bReverbZoneNeedsUpdate = true;
-	}
-	if (memberPropertyName == GET_MEMBER_NAME_CHECKED(UAkRoomComponent, AttenuationScalingFactor))
-	{
-		if (AttenuationScalingFactor <= 0.f)
-		{
-			AttenuationScalingFactor = PreviousAttenuationScalingFactor;
-			UE_LOG(LogAkAudio, Warning, TEXT("UAkRoomComponent::PostEditChangeProperty: Attenuation scaling factor for Room %s is zero or a negative number."), *GetRoomName());
-		}
-		else
-		{
-			bAttenuationScalingFactorNeedsUpdate = true;
-		}
 	}
 
 	if (IsAReverbZone())
@@ -1097,9 +1075,4 @@ void UAkRoomComponent::SetParentRoom(TWeakObjectPtr<const UAkRoomComponent> InPa
 		ParentRoom = InParentRoom;
 		ParentRoomName = InParentRoom->GetRoomName();
 	}
-}
-
-bool UAkRoomComponent::SetAttenuationScalingFactor()
-{
-	return bIsRegisteredWithWwise && AkAudioEvent != nullptr && Super::SetAttenuationScalingFactor();
 }

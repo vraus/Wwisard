@@ -360,6 +360,7 @@ public:
 		if( m_pFirst == NULL )
 			return AK_Fail;
 
+		T* pItem = m_pFirst;
 		if ( U_NEXTITEM<T>::Get( m_pFirst ) == NULL )
 		{
 			m_pFirst = NULL;
@@ -369,6 +370,7 @@ public:
 		{
 			m_pFirst = U_NEXTITEM<T>::Get( m_pFirst );
 		}
+		U_NEXTITEM<T>::Get(pItem) = nullptr;
 
 		COUNT_POLICY<T>::DecrementCount( m_pFirst );
 

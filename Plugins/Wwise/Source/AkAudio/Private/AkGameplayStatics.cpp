@@ -56,21 +56,42 @@ UAkGameplayStatics::UAkGameplayStatics(const class FObjectInitializer& ObjectIni
 	// Property initialization
 }
 
-class UAkComponent * UAkGameplayStatics::GetAkComponent( class USceneComponent* AttachToComponent, bool& ComponentCreated, FName AttachPointName, FVector Location, EAttachLocation::Type LocationType )
+class UAkComponent * UAkGameplayStatics::GetAkComponent(USceneComponent* AttachToComponent, bool& ComponentCreated, FName AttachPointName, FVector Location, EAttachLocation::
+	Type LocationType)
 {
-	if ( AttachToComponent == NULL )
+	if ( !AttachToComponent )
 	{
 		UE_LOG(LogAkAudio, Warning, TEXT("UAkGameplayStatics::GetAkComponent: NULL AttachToComponent specified!"));
-		return NULL;
+		return nullptr;
 	}
 
 	FAkAudioDevice * AkAudioDevice = FAkAudioDevice::Get();
 	if( AkAudioDevice )
 	{
-		return AkAudioDevice->GetAkComponent( AttachToComponent, AttachPointName, &Location, LocationType, ComponentCreated );
+		return AkAudioDevice->GetAkComponent(AttachToComponent, AttachPointName, &Location, LocationType,
+			ComponentCreated);
 	}
 
-	return NULL;
+	return nullptr;
+}
+
+UAkComponent* UAkGameplayStatics::GetOrCreateAkComponent(USceneComponent* AttachToComponent, bool& ComponentCreated,
+	FName AttachPointName)
+{
+	if ( !AttachToComponent )
+	{
+		UE_LOG(LogAkAudio, Warning, TEXT("UAkGameplayStatics::GetAkComponent: NULL AttachToComponent specified!"));
+		return nullptr;
+	}
+
+	FAkAudioDevice * AkAudioDevice = FAkAudioDevice::Get();
+	if( AkAudioDevice )
+	{
+		return AkAudioDevice->GetAkComponent(AttachToComponent, AttachPointName, nullptr, EAttachLocation::KeepRelativeOffset,
+			ComponentCreated);
+	}
+
+	return nullptr;
 }
 
 bool UAkGameplayStatics::IsEditor()

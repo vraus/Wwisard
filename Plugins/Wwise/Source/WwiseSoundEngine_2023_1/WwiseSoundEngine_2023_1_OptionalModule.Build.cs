@@ -58,7 +58,7 @@ public struct WwiseSoundEngine_2023_1
 			return;
 		}
 
-		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromClassName(ModuleName));
+		SE.PublicDefinitions.AddRange(WwiseSoundEngineVersion.GetVersionDefinesFromPluginDirectory(SE.PluginDirectory));
 
 		// If packaging as an Engine plugin, the UBT expects to already have a precompiled plugin available
 		// This can be set to true so long as plugin was already precompiled

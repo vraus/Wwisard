@@ -75,25 +75,16 @@ public class WwiseSoundEngineVersion
 		return Instance != null ? Instance : Instance = new WwiseSoundEngineVersion(PluginDirectory);
 	}
 
-    public static string[] GetVersionFromClassName(string ClassName)
-    {
-        return ClassName.Split('_').Skip(1).ToArray();
-    }
-
-    public static string[] GetVersionDefinesFromClassName(string ClassName)
+	public static string[] GetVersionDefinesFromPluginDirectory(string PluginDirectory)
 	{
-		var VersionArray = GetVersionFromClassName(ClassName);
-		var VersionMajor = VersionArray.Length >= 1 ? VersionArray[0] : "0";
-		var VersionMinor = VersionArray.Length >= 2 ? VersionArray[1] : "1";
-		var VersionSubMinor = VersionArray.Length >= 3 ? VersionArray[2] : "0";
-
+		WwiseSoundEngineVersion version = GetInstance(PluginDirectory);
 		return new[]
 		{
-			string.Format("AK_WWISE_SOUNDENGINE_VERSION=\"{0}\"", string.Join(".", VersionArray)),
-            string.Format("AK_WWISE_SOUNDENGINE_{0}", string.Join("_", VersionArray)),
-            string.Format("AK_WWISE_SOUNDENGINE_MAJOR_VERSION={0}", VersionMajor),
-            string.Format("AK_WWISE_SOUNDENGINE_MINOR_VERSION={0}", VersionMinor),
-            string.Format("AK_WWISE_SOUNDENGINE_SUBMINOR_VERSION={0}", VersionSubMinor)
+			string.Format("AK_WWISE_SOUNDENGINE_VERSION=\"{0}.{1}.{2}\"", version.Major, version.Minor, version.SubMinor),
+			string.Format("AK_WWISE_SOUNDENGINE_{0}_{1}", version.Major, version.Minor),
+			string.Format("AK_WWISE_SOUNDENGINE_MAJOR_VERSION={0}", version.Major),
+			string.Format("AK_WWISE_SOUNDENGINE_MINOR_VERSION={0}", version.Minor),
+			string.Format("AK_WWISE_SOUNDENGINE_SUBMINOR_VERSION={0}", version.SubMinor)
 		};
 	}
 

@@ -257,8 +257,6 @@ void UAkLateReverbComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 
 void UAkLateReverbComponent::OnUnregister()
 {
-	Super::OnUnregister();
-
 #if WITH_EDITOR
 	auto* World = GetWorld();
 	if(World && World->IsPlayInEditor())
@@ -283,6 +281,7 @@ void UAkLateReverbComponent::OnUnregister()
 		}
 	}
 #endif
+	Super::OnUnregister();
 }
 
 bool UAkLateReverbComponent::MoveComponentImpl(
@@ -301,6 +300,7 @@ bool UAkLateReverbComponent::MoveComponentImpl(
 
 void UAkLateReverbComponent::OnUpdateTransform(EUpdateTransformFlags UpdateTransformFlags, ETeleportType Teleport)
 {
+	Super::OnUpdateTransform(UpdateTransformFlags, Teleport);
 	DecayEstimationNeedsUpdate = ReverbDescriptor.ShouldEstimateDecay();
 	PredelayEstimationNeedsUpdate = ReverbDescriptor.ShouldEstimatePredelay();
 

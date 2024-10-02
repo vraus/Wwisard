@@ -100,7 +100,7 @@ struct AkThreadProperties {};
 #endif
 
 #ifndef AkAllocaSIMD
-#ifdef __clang__
+#if defined (__clang__)
 #if __has_builtin( __builtin_alloca_with_align )
 #define AkAllocaSIMD( _size_ ) __builtin_alloca_with_align( _size_, 128 )
 #else

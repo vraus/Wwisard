@@ -42,10 +42,10 @@ struct FWwiseAudioLinkSynchronizer : IAudioLinkSynchronizer, TSharedFromThis<FWw
 
 	void ExecuteBeginRender(AK::IAkGlobalPluginContext* InContext);
 	void ExecuteEndRender(AK::IAkGlobalPluginContext* InContext);
-	void ExecuteOpenStream();
-	void ExecuteCloseStream();
-	void Bind();
-	void Unbind();
+	bool ExecuteOpenStream();
+	bool ExecuteCloseStream();
+	bool Bind();
+	bool Unbind();
 
 	#define MAKE_DELEGATE_FUNC(X)\
 		FDelegateHandle Register##X##Delegate(const FOn##X::FDelegate& InDelegate) override\

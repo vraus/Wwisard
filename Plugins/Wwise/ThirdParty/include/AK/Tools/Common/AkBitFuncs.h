@@ -41,9 +41,25 @@ the specific language governing permissions and limitations under the License.
 #if !defined(AK_BIT_SCAN_INSTRUCTIONS)
 namespace AKPLATFORM
 {
+	// AkPopCount64  returns how many set bits there are in the provided value
+	// e.g. 0b0000`1111`0000`0011 would return 6
+#if defined(__clang__) || defined (__GNUC__)
+	AkForceInline AkUInt32 AkPopCount64(AkUInt64 in_bits)
+	{
+		return __builtin_popcountll(in_bits);
+	}
+#else
+	AkForceInline AkUInt32 AkPopCount64(AkUInt64 in_bits)
+	{
+		AkUInt32 num = 0;
+		while (in_bits) { ++num; in_bits &= in_bits - 1; }
+		return num;
+	}
+#endif
+	
 	// AkPopCount returns how many set bits there are in the provided value
 	// e.g. 0b0000`1111`0000`0011 would return 6
-#if __clang__ || defined __GNUC__
+#if defined(__clang__) || defined (__GNUC__)
 	AkForceInline AkUInt32 AkPopCount(AkUInt32 in_bits)
 	{
 		return __builtin_popcount(in_bits);
@@ -67,7 +83,7 @@ namespace AKPLATFORM
 		_BitScanForward64(&ret, in_bits);
 		return in_bits ? ret : 64;
 	}
-#elif __clang__ || defined __GNUC__
+#elif defined(__clang__) || defined (__GNUC__)
 	AkForceInline AkUInt32 AkBitScanForward64(AkUInt64 in_bits)
 	{
 		return in_bits ? __builtin_ctzll(in_bits) : 64;
@@ -95,7 +111,7 @@ namespace AKPLATFORM
 		return in_bits ? ret : 32;
 	}
 
-#elif __clang__ || defined __GNUC__
+#elif defined(__clang__) || defined (__GNUC__)
 	AkForceInline AkUInt32 AkBitScanForward(AkUInt32 in_bits)
 	{
 		return in_bits ? __builtin_ctz(in_bits) : 32;
@@ -124,7 +140,7 @@ namespace AKPLATFORM
 		_BitScanReverse64(&ret, in_bits);
 		return in_bits ? 63 - ret : 64;
 	}
-#elif __clang__ || defined __GNUC__
+#elif defined(__clang__) || defined (__GNUC__)
 	AkForceInline AkUInt32 AkBitScanReverse64(AkUInt64 in_bits)
 	{
 		return in_bits ? __builtin_clzll(in_bits) : 64;
@@ -151,7 +167,7 @@ namespace AKPLATFORM
 		_BitScanReverse(&ret, in_bits);
 		return in_bits ? 31 - ret : 32;
 	}
-#elif __clang__ || defined __GNUC__
+#elif defined(__clang__) || defined (__GNUC__)
 	AkForceInline AkUInt32 AkBitScanReverse(AkUInt32 in_bits)
 	{
 		return in_bits ? __builtin_clz(in_bits) : 32;

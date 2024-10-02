@@ -40,10 +40,26 @@ public:
 	UAkGameplayStatics(const class FObjectInitializer& ObjectInitializer);
 
 	/** Get an AkComponent attached to and following the specified component. 
+	 * @param AttachToComponent - The parent component to search
+	 * @param ComponentCreated - True if a new component was created
+	 * @param AttachPointName - Optional named point within the AttachComponent to play the sound at.
+	 * @param Location Position the Component is situated at
+	 * @param LocationType KeepRelativeOffset for position relative to AttachToComponent, KeepWorldPosition for global
+	 */
+	UFUNCTION(BlueprintCallable, Category="Audiokinetic|AkComponent",
+		meta=(DeprecatedFunction, DeprecationMessage="Please use GetOrCreateAkComponent instead."))
+	static class UAkComponent* GetAkComponent(USceneComponent* AttachToComponent, bool& ComponentCreated,
+		FName AttachPointName = NAME_None, FVector Location = FVector(ForceInit), EAttachLocation::Type LocationType =
+			EAttachLocation::KeepRelativeOffset);
+
+	/** Get an AkComponent attached to and following the specified component. 
+	 * @param AttachToComponent - The parent component to search
+	 * @param ComponentCreated - True if a new component was created
 	 * @param AttachPointName - Optional named point within the AttachComponent to play the sound at.
 	 */
-	UFUNCTION(BlueprintCallable, Category="Audiokinetic")
-	static class UAkComponent * GetAkComponent( class USceneComponent* AttachToComponent, bool& ComponentCreated, FName AttachPointName = NAME_None, FVector Location = FVector(ForceInit), EAttachLocation::Type LocationType = EAttachLocation::KeepRelativeOffset );
+	UFUNCTION(BlueprintCallable, Category="Audiokinetic|AkComponent")
+	static class UAkComponent* GetOrCreateAkComponent(class USceneComponent* AttachToComponent, bool& ComponentCreated,
+		FName AttachPointName = NAME_None);
 
 	UFUNCTION(BlueprintCallable, Category="Audiokinetic")
 	static bool IsEditor();
@@ -95,7 +111,7 @@ public:
 	 * @param AutoPost - Automatically post the event once the AkComponent is created.
 	 * @param AutoDestroy - Automatically destroy the AkComponent once the event is finished.
 	 */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic", meta=(WorldContext="WorldContextObject", AdvancedDisplay = "6"))
+	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category="Audiokinetic|AkComponent", meta=(WorldContext="WorldContextObject", AdvancedDisplay = "6"))
 	static class UAkComponent* SpawnAkComponentAtLocation(UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, bool AutoPost, const FString& EventName, bool AutoDestroy = true);
 
 	/**

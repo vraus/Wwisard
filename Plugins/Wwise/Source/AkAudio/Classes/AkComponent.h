@@ -255,10 +255,6 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|AkComponent")
 	void SetOutputBusVolume(float BusVolume);
 
-	/** Sets the attenuation scaling factor, which modifies the attenuation computations on this game object to simulate sounds with a a larger or smaller area of effect. */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|AkComponent")
-	void SetAttenuationScalingFactor(float Value);
-
 	/** Whether to use reverb volumes or not */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkComponent")
 	bool bUseReverbVolumes = true;
@@ -290,7 +286,7 @@ public:
 	/**
 	 * Called after component is unregistered
 	 */
-	virtual void OnUnregister();
+	virtual void OnUnregister() override;
 
 	/**
 	 * Clean up
@@ -350,7 +346,6 @@ public:
 	FVector GetPosition() const;
 
 #if WITH_EDITOR
-	virtual void PreEditChange(FProperty* PropertyAboutToChange) override;
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
 

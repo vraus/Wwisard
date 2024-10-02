@@ -674,7 +674,7 @@ namespace AkAssetMigration
 		}
 
 		TArray<TSharedPtr<FJsonValue>> IncludeIdJson;
-		for (const FString IncludedId : IncludeIds)
+		for (const FString& IncludedId : IncludeIds)
 		{
 			TSharedPtr<FJsonObject> IncludedObject = MakeShared< FJsonObject>();
 			IncludedObject->SetStringField(WwiseWaapiHelper::OBJECT, IncludedId);

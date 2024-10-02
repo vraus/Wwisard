@@ -136,7 +136,6 @@ void UAkPortalComponent::OnRegister()
 
 void UAkPortalComponent::OnUnregister()
 {
-	Super::OnUnregister();
 #if WITH_EDITOR
 	if (!HasAnyFlags(RF_Transient))
 	{
@@ -149,6 +148,7 @@ void UAkPortalComponent::OnUnregister()
 		RemovePortalConnections();
 		Dev->RemoveSpatialAudioPortal(this);
 	}
+	Super::OnUnregister();
 }
 
 #if WITH_EDITOR
@@ -197,6 +197,7 @@ void UAkPortalComponent::OnComponentDestroyed(bool bDestroyingHierarchy)
 	AkSettingsPerUser->OnShowRoomsPortalsChanged.Remove(ShowPortalsChangedHandle);
 	ShowPortalsChangedHandle.Reset();
 	DestroyDrawComponent();
+	Super::OnComponentDestroyed(bDestroyingHierarchy);
 }
 #endif // WITH_EDITOR
 
@@ -216,6 +217,7 @@ bool UAkPortalComponent::MoveComponentImpl(
 
 void UAkPortalComponent::OnUpdateTransform(EUpdateTransformFlags UpdateTransformFlags, ETeleportType Teleport)
 {
+	Super::OnUpdateTransform(UpdateTransformFlags, Teleport);
 	bPortalRoomsNeedUpdate = true;
 	bPortalNeedsUpdate = true;
 }
@@ -380,6 +382,7 @@ void UAkPortalComponent::BeginPlay()
 
 void UAkPortalComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction * ThisTickFunction)
 {
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	if (bPortalRoomsNeedUpdate)
 	{
 		UpdateConnectedRooms();

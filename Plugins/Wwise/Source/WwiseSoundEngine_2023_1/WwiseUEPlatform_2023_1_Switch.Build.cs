@@ -35,7 +35,7 @@ public class WwiseUEPlatform_2023_1_Switch : WwiseUEPlatform
 
 	public override bool SupportsDeviceMemory { get { return false; } }
 
-	public override string AkPlatformLibDir { get { return "NX64_SDK16"; } }
+	public override string AkPlatformLibDir { get { return "NX64_SDK18"; } }
 
 	public override string DynamicLibExtension { get { return string.Empty; } }
 

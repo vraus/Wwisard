@@ -343,7 +343,7 @@ public:
 	UPROPERTY(Config, EditAnywhere, Category = "Initialization", meta=(ConfigRestartRequired=true, EditCondition="AudioRouting == EAkUnrealAudioRouting::Custom"))
 	bool bAkAudioMixerEnabled = false;
 
-	// The default value of the "Attenuation Scaling Factor" when an AkComponent is created.
+	// The default value of the "Attenuation Scaling Factor" when an AkGameObject is created.
 	UPROPERTY(Config, EditAnywhere, Category = "Initialization", meta = (ClampMin = "0.0"))
 	float DefaultScalingFactor = 1.0f;
 
@@ -414,6 +414,7 @@ private:
 	FString PreviousWwiseProjectPath;
 	FString PreviousWwiseGeneratedSoundBankFolder;
 	bool bTextureMapInitialized = false;
+	float PreviousDefaultScalingFactor = 1.f;
 	TMap< UPhysicalMaterial*, UAkAcousticTexture* > TextureMapInternal;
 	FAssetRegistryModule* AssetRegistryModule;
 

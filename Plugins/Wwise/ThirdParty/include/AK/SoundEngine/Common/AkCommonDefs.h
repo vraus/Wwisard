@@ -428,11 +428,11 @@ struct AkAudioObject
 /// We prefer "3D Audio" to "Spatial" to avoid ambiguity with spatial audio, which typically involves sound propagation and environment effects.
 struct Ak3DAudioSinkCapabilities
 {
-	AkChannelConfig channelConfig;                 ///< Channel configuration of the main mix.
-	AkUInt32        uMaxSystemAudioObjects;        ///< Maximum number of System Audio Objects that can be active concurrently. A value of zero indicates the system does not support this feature.
-	AkUInt32        uAvailableSystemAudioObjects;  ///< How many System Audio Objects can currently be sent to the sink. This value can change at runtime depending on what is playing. Can never be higher than uMaxSystemAudioObjects.
-	bool            bPassthrough;                  ///< Separate  pass-through mix is supported.
-	bool            bMultiChannelObjects;          ///< Can handle multi-channel objects
+	AkChannelConfig channelConfig{};                              ///< Channel configuration of the main mix.
+	AkUInt32        uMaxSystemAudioObjects = 0;                   ///< Maximum number of System Audio Objects that can be active concurrently. A value of zero indicates the system does not support this feature.
+	AkUInt32        uAvailableSystemAudioObjects = 0;             ///< How many System Audio Objects can currently be sent to the sink. This value can change at runtime depending on what is playing. Can never be higher than uMaxSystemAudioObjects.
+	bool            bPassthrough = false;                         ///< Separate  pass-through mix is supported.
+	bool            bMultiChannelObjects = false;                 ///< Can handle multi-channel objects
 };
 
 /// Enum of the possible object destinations when reaching a 3D audio-capable sink

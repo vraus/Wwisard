@@ -98,10 +98,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AkEvent", SimpleDisplay)
 	bool AutoPost = false;
 
-	/** Sets the attenuation scaling factor, which modifies the attenuation computations on this game object to simulate sounds with a a larger or smaller area of effect. */
-	UFUNCTION(BlueprintCallable, BlueprintCosmetic, Category = "Audiokinetic|AkRoomComponent")
-	void SetAttenuationScalingFactor(float Value);
-
 	/**
 	* Sets this Room as a Reverb Zone.
 	* A Reverb Zone models a region that has a distinct reverb effect or ambience but does not require Portals to connect to neighboring Rooms.
@@ -228,7 +224,6 @@ public:
 	virtual void EndPlay(EEndPlayReason::Type EndPlayReason) override;
 
 #if WITH_EDITOR
-	virtual void PreEditChange(FProperty* PropertyAboutToChange) override;
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 	void OnParentNameChanged();
 #endif
@@ -285,13 +280,10 @@ private:
 	bool IsAParentOf(TWeakObjectPtr<const UAkRoomComponent> InRoom) const;
 	void SetParentRoom(TWeakObjectPtr<const UAkRoomComponent> InParentRoom);
 
-	bool SetAttenuationScalingFactor();
-
 	UPROPERTY()
 	TWeakObjectPtr<const UAkRoomComponent> ParentRoom;
 	bool bIsAReverbZoneInWwise = false;
 	bool bReverbZoneNeedsUpdate = false;
-	bool bAttenuationScalingFactorNeedsUpdate = false;
 
 #if WITH_EDITOR
 	void HandleObjectsReplaced(const TMap<UObject*, UObject*>& ReplacementMap);

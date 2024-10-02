@@ -414,6 +414,7 @@ void UAkSettings::PreEditChange(FProperty* PropertyAboutToChange)
 {
 	PreviousWwiseProjectPath = WwiseProjectPath.FilePath;
 	PreviousWwiseGeneratedSoundBankFolder = RootOutputPath.Path;
+	PreviousDefaultScalingFactor = DefaultScalingFactor;
 
 	Super::PreEditChange(PropertyAboutToChange);
 }
@@ -523,6 +524,14 @@ void UAkSettings::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedE
 		{
 			FWwiseInitBankLoader::Get()->UpdateInitBankInSettings();
 			FAkAudioModule::AkAudioModuleInstance->ReloadWwiseAssetData();
+		}
+	}
+	else if (MemberPropertyName == GET_MEMBER_NAME_CHECKED(UAkSettings, DefaultScalingFactor))
+	{
+		if (DefaultScalingFactor <= 0.f)
+		{
+			DefaultScalingFactor = PreviousDefaultScalingFactor;
+			UE_LOG(LogAkAudio, Warning, TEXT("UAkSettings::PostEditChangeProperty: Default Scaling Factor must be greater than 0. Setting Default Scaling Factor to the previous value."));
 		}
 	}
 
