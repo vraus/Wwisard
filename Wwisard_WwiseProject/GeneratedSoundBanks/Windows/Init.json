@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C4E552C9-774D-617C-8482-0270F3F74D4A}",
+    "Hash": "{C9A2BB2D-3AD8-0BD3-20D3-DCED3EA2219C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -38,14 +38,14 @@
      {
       "Id": "493417818",
       "Name": "Music Audio Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Music Audio Bus",
-      "GUID": "{A17D8076-A924-4863-B7C6-62955EAF5FD1}"
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music Audio Bus",
+      "GUID": "{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}"
      },
      {
       "Id": "527200915",
       "Name": "FX Audio Bus",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\FX Audio Bus",
-      "GUID": "{063FFBD8-DD41-4576-B1FF-51A1B591EC98}"
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\FX Audio Bus",
+      "GUID": "{4F841DF4-9F47-4390-972E-BEEEBBB62351}"
      },
      {
       "Id": "3803692087",
@@ -53,9 +53,29 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{EE2093A1-4433-4205-AFC0-DC951398D54E}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{674E38C7-002C-4868-BD83-02263EB78C15}"
+     },
+     {
+      "Id": "3328840097",
+      "Name": "FXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\FXVolume",
+      "GUID": "{36BBFD0E-42CA-45F9-B77E-5AC50EB7FB85}"
+     }
     ]
    }
   ],
-  "FileHash": "{BFBA52E4-A035-3606-A38A-2538617DFB58}"
+  "FileHash": "{FC2B1270-B5D2-790F-A6F9-E955CD0E5A85}"
  }
 }

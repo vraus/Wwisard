@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo>
-	<Project Name="Wwisard_WwiseProject" GUID="{9D4F23BA-ED2D-455C-82E1-58F96BEBAD40}" Generator="2023.1.6.8555"/>
+	<Project Name="Wwisard_WwiseProject" GUID="{9D4F23BA-ED2D-455C-82E1-58F96BEBAD40}" Generator="2023.1.7.8574"/>
 	<CacheRoot>../.cache</CacheRoot>
 	<Platforms>
 		<Platform Name="Mac" GUID="{34156D66-A34F-4A4D-BC39-FA8A917E2517}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="Mac"/>
@@ -9,5 +9,5 @@
 	<Languages>
 		<Language Name="English(US)" Id="684519430" GUID="{3E6AEA9C-9235-46A8-B91A-A4979558F367}" Default="true" UseAsStandIn="true"/>
 	</Languages>
-	<FileHash>{CDCDD436-B3C1-D72A-6410-BFFA0626E5F6}</FileHash>
+	<FileHash>{430B2E8C-6C3E-2E50-3AEA-4535039D49EE}</FileHash>
 </ProjectInfo>

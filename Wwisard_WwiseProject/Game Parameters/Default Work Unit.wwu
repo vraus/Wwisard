@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1104F063-8554-47E7-9A58-3C3A98190579}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{1104F063-8554-47E7-9A58-3C3A98190579}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1104F063-8554-47E7-9A58-3C3A98190579}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="MasterVolume" ID="{674E38C7-002C-4868-BD83-02263EB78C15}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.6"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FXVolume" ID="{36BBFD0E-42CA-45F9-B77E-5AC50EB7FB85}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.6"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MusicVolume" ID="{EE2093A1-4433-4205-AFC0-DC951398D54E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.6"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

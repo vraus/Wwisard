@@ -13,7 +13,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Music Audio Bus" ID="{A17D8076-A924-4863-B7C6-62955EAF5FD1}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="Music Audio Bus" ID="{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -44,7 +44,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -75,7 +75,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -106,7 +106,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -132,7 +132,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -158,7 +158,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -204,7 +204,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -235,7 +235,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -267,7 +267,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -297,7 +297,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2FCBD10D-AEB3-4523-8C45-EAD9B4EC6D15}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="FX Audio Bus" ID="{063FFBD8-DD41-4576-B1FF-51A1B591EC98}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
+							<ObjectRef Name="FX Audio Bus" ID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" WorkUnitID="{9ACF5E71-E9B4-41A4-922E-DF66E4E134EA}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

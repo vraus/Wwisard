@@ -3,7 +3,7 @@
   "Project": {
    "Name": "Wwisard_WwiseProject",
    "GUID": "{9D4F23BA-ED2D-455C-82E1-58F96BEBAD40}",
-   "Generator": "2023.1.6.8555"
+   "Generator": "2023.1.7.8574"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -31,6 +31,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{33509FD5-DDD4-8FD6-BF61-0846866D6595}"
+  "FileHash": "{221B60B5-BB99-1047-B78C-785F8564CAB8}"
  }
 }
