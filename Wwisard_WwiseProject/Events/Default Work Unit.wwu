@@ -54,10 +54,10 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
-						<Action Name="" ID="{277A88D8-88D4-4F9C-8ED0-FB2700F6D5E7}" ShortID="938295119">
+						<Action Name="" ID="{724DD106-DB97-428E-A350-EC05E59F8D36}" ShortID="801317204">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footstep" ID="{A70AFD15-038A-4CE1-A125-A51C73292108}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+									<ObjectRef Name="Footsteps" ID="{78BDB90A-D39B-454A-8654-7CDCA73B9C7D}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
