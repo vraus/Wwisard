@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F94D10CC-AC95-EB37-B0C1-687D7727E64D}",
+    "Hash": "{073C86FD-0BE6-9C50-032C-33E636C6F377}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -68,10 +68,22 @@
       "GUID": "{674E38C7-002C-4868-BD83-02263EB78C15}"
      },
      {
+      "Id": "3303426438",
+      "Name": "BouncingVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\BouncingVolume",
+      "GUID": "{66F90FD6-643D-46D6-95F7-DD9F9567A7DD}"
+     },
+     {
       "Id": "3328840097",
       "Name": "FXVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\FXVolume",
       "GUID": "{36BBFD0E-42CA-45F9-B77E-5AC50EB7FB85}"
+     },
+     {
+      "Id": "3489374133",
+      "Name": "ToggleFireWeaponSounds",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ToggleFireWeaponSounds",
+      "GUID": "{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"
      }
     ],
     "SwitchGroups": [
@@ -104,6 +116,6 @@
     ]
    }
   ],
-  "FileHash": "{4A712322-60BF-B7DF-CD01-7F0D6EE3D74E}"
+  "FileHash": "{6AA3CB67-6DE4-5970-B0C1-CAE1146F4636}"
  }
 }

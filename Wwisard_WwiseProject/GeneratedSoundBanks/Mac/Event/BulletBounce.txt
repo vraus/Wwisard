@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	860695061	BulletBounce			\Default Work Unit\BulletBounce	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3303426438	BouncingVolume			\Default Work Unit\BouncingVolume	
+

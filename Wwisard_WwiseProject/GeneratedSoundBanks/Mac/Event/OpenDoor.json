@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
     "Language": "SFX",
-    "Hash": "{9FFF5777-A539-1B15-E36F-AD387238A7B2}",
+    "Hash": "{C1F623F1-28B1-1A2B-4DA9-DCF88DE0B1D0}",
     "ObjectPath": "OpenDoor",
     "ShortName": "OpenDoor",
     "Path": "Event/OpenDoor.bnk",
@@ -31,6 +31,7 @@
       "Name": "OpenDoor",
       "ObjectPath": "\\Events\\Default Work Unit\\OpenDoor",
       "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
+      "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "1.9076208",
       "DurationMax": "1.9076208",
@@ -43,6 +44,6 @@
     ]
    }
   ],
-  "FileHash": "{4C534BD5-B2A5-0730-0CE4-C2218C499977}"
+  "FileHash": "{4050C251-CDDC-C510-6326-54745F673B26}"
  }
 }

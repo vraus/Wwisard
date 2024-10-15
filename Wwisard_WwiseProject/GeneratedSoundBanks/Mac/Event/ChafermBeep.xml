@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{E1E80251-2EF9-E3F7-0FFA-4D3B903BA213}">
+		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{728E5E86-1C5F-222F-7EB8-276E694F01C9}">
 			<ObjectPath>ChafermBeep</ObjectPath>
 			<ShortName>ChafermBeep</ShortName>
 			<Path>Event/ChafermBeep.bnk</Path>
@@ -18,7 +18,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
+				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
 					<MediaRefs>
 						<MediaRef Id="233372072"/>
 						<MediaRef Id="700142031"/>
@@ -27,5 +27,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C87C74E1-E0E6-D84E-96E5-E0FBCC7635C9}</FileHash>
+	<FileHash>{4F34E591-FDF9-2D92-C98F-AA7D1034F493}</FileHash>
 </SoundBanksInfo>

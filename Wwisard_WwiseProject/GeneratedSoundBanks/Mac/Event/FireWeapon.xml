@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{5D2272A3-0FA5-247C-991E-020534B59524}">
+		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}">
 			<ObjectPath>FireWeapon</ObjectPath>
 			<ShortName>FireWeapon</ShortName>
 			<Path>Event/FireWeapon.bnk</Path>
@@ -19,7 +19,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3489374133" Name="ToggleFireWeaponSounds" ObjectPath="\Game Parameters\Default Work Unit\ToggleFireWeaponSounds" GUID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{541D1C57-1464-52B1-EA2D-DD1C69EAD472}</FileHash>
+	<FileHash>{856A7D80-00EC-899D-602F-9AE631A22591}</FileHash>
 </SoundBanksInfo>

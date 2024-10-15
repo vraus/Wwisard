@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{BFA53055-39B8-1A29-0F95-3003E61EC586}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{0E928AA7-E502-6182-46CA-843380D1F725}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,7 +19,9 @@
 			<GameParameters>
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{EE2093A1-4433-4205-AFC0-DC951398D54E}"/>
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume" GUID="{674E38C7-002C-4868-BD83-02263EB78C15}"/>
+				<GameParameter Id="3303426438" Name="BouncingVolume" ObjectPath="\Game Parameters\Default Work Unit\BouncingVolume" GUID="{66F90FD6-643D-46D6-95F7-DD9F9567A7DD}"/>
 				<GameParameter Id="3328840097" Name="FXVolume" ObjectPath="\Game Parameters\Default Work Unit\FXVolume" GUID="{36BBFD0E-42CA-45F9-B77E-5AC50EB7FB85}"/>
+				<GameParameter Id="3489374133" Name="ToggleFireWeaponSounds" ObjectPath="\Game Parameters\Default Work Unit\ToggleFireWeaponSounds" GUID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{932A6409-DFC2-4E25-B2F6-20F4DA230D03}">
@@ -32,5 +34,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4742D329-01AF-7CA8-6380-F1FD4556FF13}</FileHash>
+	<FileHash>{ABCF2E78-C1A7-2EF0-DDB5-DD089C4CC802}</FileHash>
 </SoundBanksInfo>

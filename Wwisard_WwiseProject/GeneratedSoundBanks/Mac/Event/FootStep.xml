@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{0E415FC4-86C4-7DA7-F759-D18890B357E5}">
+		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{FB2ED804-8D32-41BB-C83C-8EF9A0AED696}">
 			<ObjectPath>FootStep</ObjectPath>
 			<ShortName>FootStep</ShortName>
 			<Path>Event/FootStep.bnk</Path>
@@ -169,5 +169,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA961216-1226-2314-187E-1EE0107D0110}</FileHash>
+	<FileHash>{827F0640-3D1E-02FE-5DF7-47173F00407C}</FileHash>
 </SoundBanksInfo>

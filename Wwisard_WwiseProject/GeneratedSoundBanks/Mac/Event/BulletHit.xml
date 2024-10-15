@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{C79E92D8-BF55-14AC-97C5-D5E36299D9BA}">
+		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{3208D56A-884A-9DAA-53B2-B310B299EFB3}">
 			<ObjectPath>BulletHit</ObjectPath>
 			<ShortName>BulletHit</ShortName>
 			<Path>Event/BulletHit.bnk</Path>
@@ -13,7 +13,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
+				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
 					<MediaRefs>
 						<MediaRef Id="732227477"/>
 					</MediaRefs>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{15A3B7C9-5D31-1F9E-762A-ECAEC836C780}</FileHash>
+	<FileHash>{C5D891BE-3753-679F-B98A-9C3D47834B21}</FileHash>
 </SoundBanksInfo>

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}",
     "Language": "SFX",
-    "Hash": "{5D2272A3-0FA5-247C-991E-020534B59524}",
+    "Hash": "{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}",
     "ObjectPath": "FireWeapon",
     "ShortName": "FireWeapon",
     "Path": "Event/FireWeapon.bnk",
@@ -40,9 +40,17 @@
        }
       ]
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3489374133",
+      "Name": "ToggleFireWeaponSounds",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ToggleFireWeaponSounds",
+      "GUID": "{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"
+     }
     ]
    }
   ],
-  "FileHash": "{4B2FBEAE-3691-4AF7-F064-BA8EE1F60654}"
+  "FileHash": "{1122DE32-058E-1EA0-531C-952EE9C0F4FB}"
  }
 }

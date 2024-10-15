@@ -130,6 +130,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BulletBounce" ID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{BABF1C9A-1219-4200-A3E6-ED9ECD32F988}" ShortID="339882145">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BouncingBall" ID="{0BACA781-3C0E-493C-BFD6-0F0E2AD71B53}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7D212F46-0609-4EF0-BF92-D1EBD20D64B7}" ShortID="746560244">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BouncingBall" ID="{0BACA781-3C0E-493C-BFD6-0F0E2AD71B53}" WorkUnitID="{FEBDD3EA-23CA-4BE0-A756-C5638D6BDB5C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

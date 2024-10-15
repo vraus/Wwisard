@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
 	<SoundBanks>
-		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{5D2272A3-0FA5-247C-991E-020534B59524}">
+		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}">
 			<ObjectPath>FireWeapon</ObjectPath>
 			<ShortName>FireWeapon</ShortName>
 			<Path>Event/FireWeapon.bnk</Path>
@@ -19,7 +19,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3489374133" Name="ToggleFireWeaponSounds" ObjectPath="\Game Parameters\Default Work Unit\ToggleFireWeaponSounds" GUID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{79887D5E-78DD-3160-C14D-9F5BE2B5A17E}</FileHash>
+	<FileHash>{F731C01D-9CE5-31DA-301D-49DBE0B84379}</FileHash>
 </SoundBanksInfo>

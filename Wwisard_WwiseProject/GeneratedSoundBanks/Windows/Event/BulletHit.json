@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
     "Language": "SFX",
-    "Hash": "{C79E92D8-BF55-14AC-97C5-D5E36299D9BA}",
+    "Hash": "{3208D56A-884A-9DAA-53B2-B310B299EFB3}",
     "ObjectPath": "BulletHit",
     "ShortName": "BulletHit",
     "Path": "Event/BulletHit.bnk",
@@ -31,6 +31,7 @@
       "Name": "BulletHit",
       "ObjectPath": "\\Events\\Default Work Unit\\BulletHit",
       "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
+      "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.42237842",
       "DurationMax": "0.42237842",
@@ -43,6 +44,6 @@
     ]
    }
   ],
-  "FileHash": "{BA58F75D-9645-7179-A9C9-B30EC51DB78B}"
+  "FileHash": "{78F86901-F018-9E4B-316E-FA7CD1163172}"
  }
 }

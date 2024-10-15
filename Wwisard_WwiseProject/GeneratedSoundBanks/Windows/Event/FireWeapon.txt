@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1283499417	FireWeapon			\Default Work Unit\FireWeapon	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3489374133	ToggleFireWeaponSounds			\Default Work Unit\ToggleFireWeaponSounds	
+

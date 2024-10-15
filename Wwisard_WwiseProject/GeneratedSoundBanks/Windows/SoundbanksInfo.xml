@@ -9,7 +9,29 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{5D2272A3-0FA5-247C-991E-020534B59524}">
+		<SoundBank Id="860695061" Type="Event" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" Language="SFX" Hash="{CADFF4DC-952A-B8E7-C1D2-A55F3DCC694D}">
+			<ObjectPath>BulletBounce</ObjectPath>
+			<ShortName>BulletBounce</ShortName>
+			<Path>Event/BulletBounce.bnk</Path>
+			<Media>
+				<File Id="1051472599" Language="SFX" Streaming="false" Location="Loose">
+					<ShortName>bouncing-ball-sfx-215265.wav</ShortName>
+					<Path>Media/1051472599.wem</Path>
+					<CachePath>SFX/bouncing-ball-sfx-215265_2B6F3743.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="860695061" Name="BulletBounce" ObjectPath="\Events\Default Work Unit\BulletBounce" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.4094983" DurationMax="0.4094983">
+					<MediaRefs>
+						<MediaRef Id="1051472599"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3303426438" Name="BouncingVolume" ObjectPath="\Game Parameters\Default Work Unit\BouncingVolume" GUID="{66F90FD6-643D-46D6-95F7-DD9F9567A7DD}"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}">
 			<ObjectPath>FireWeapon</ObjectPath>
 			<ShortName>FireWeapon</ShortName>
 			<Path>Event/FireWeapon.bnk</Path>
@@ -27,8 +49,11 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3489374133" Name="ToggleFireWeaponSounds" ObjectPath="\Game Parameters\Default Work Unit\ToggleFireWeaponSounds" GUID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{F94D10CC-AC95-EB37-B0C1-687D7727E64D}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{073C86FD-0BE6-9C50-032C-33E636C6F377}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -46,7 +71,9 @@
 			<GameParameters>
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume" GUID="{EE2093A1-4433-4205-AFC0-DC951398D54E}"/>
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume" GUID="{674E38C7-002C-4868-BD83-02263EB78C15}"/>
+				<GameParameter Id="3303426438" Name="BouncingVolume" ObjectPath="\Game Parameters\Default Work Unit\BouncingVolume" GUID="{66F90FD6-643D-46D6-95F7-DD9F9567A7DD}"/>
 				<GameParameter Id="3328840097" Name="FXVolume" ObjectPath="\Game Parameters\Default Work Unit\FXVolume" GUID="{36BBFD0E-42CA-45F9-B77E-5AC50EB7FB85}"/>
+				<GameParameter Id="3489374133" Name="ToggleFireWeaponSounds" ObjectPath="\Game Parameters\Default Work Unit\ToggleFireWeaponSounds" GUID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps" GUID="{932A6409-DFC2-4E25-B2F6-20F4DA230D03}">
@@ -58,7 +85,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{E1E80251-2EF9-E3F7-0FFA-4D3B903BA213}">
+		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{728E5E86-1C5F-222F-7EB8-276E694F01C9}">
 			<ObjectPath>ChafermBeep</ObjectPath>
 			<ShortName>ChafermBeep</ShortName>
 			<Path>Event/ChafermBeep.bnk</Path>
@@ -75,7 +102,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
+				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
 					<MediaRefs>
 						<MediaRef Id="233372072"/>
 						<MediaRef Id="700142031"/>
@@ -102,7 +129,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{0E415FC4-86C4-7DA7-F759-D18890B357E5}">
+		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{FB2ED804-8D32-41BB-C83C-8EF9A0AED696}">
 			<ObjectPath>FootStep</ObjectPath>
 			<ShortName>FootStep</ShortName>
 			<Path>Event/FootStep.bnk</Path>
@@ -288,7 +315,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="2122995345" Type="Event" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" Language="SFX" Hash="{9FFF5777-A539-1B15-E36F-AD387238A7B2}">
+		<SoundBank Id="2122995345" Type="Event" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" Language="SFX" Hash="{C1F623F1-28B1-1A2B-4DA9-DCF88DE0B1D0}">
 			<ObjectPath>OpenDoor</ObjectPath>
 			<ShortName>OpenDoor</ShortName>
 			<Path>Event/OpenDoor.bnk</Path>
@@ -300,7 +327,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2122995345" Name="OpenDoor" ObjectPath="\Events\Default Work Unit\OpenDoor" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" DurationType="OneShot" DurationMin="1.9076208" DurationMax="1.9076208">
+				<Event Id="2122995345" Name="OpenDoor" ObjectPath="\Events\Default Work Unit\OpenDoor" GUID="{2320DF26-4D6C-4BD9-841B-0B542901A6F8}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="1.9076208" DurationMax="1.9076208">
 					<MediaRefs>
 						<MediaRef Id="724664712"/>
 					</MediaRefs>
@@ -326,7 +353,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{C79E92D8-BF55-14AC-97C5-D5E36299D9BA}">
+		<SoundBank Id="4179333400" Type="Event" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" Language="SFX" Hash="{3208D56A-884A-9DAA-53B2-B310B299EFB3}">
 			<ObjectPath>BulletHit</ObjectPath>
 			<ShortName>BulletHit</ShortName>
 			<Path>Event/BulletHit.bnk</Path>
@@ -338,7 +365,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
+				<Event Id="4179333400" Name="BulletHit" ObjectPath="\Events\Default Work Unit\BulletHit" GUID="{3185C608-F2C4-479F-9882-F5037C32C36F}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.42237842" DurationMax="0.42237842">
 					<MediaRefs>
 						<MediaRef Id="732227477"/>
 					</MediaRefs>
@@ -346,5 +373,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0A59FD5D-2D7F-5A41-DD41-053F7D178ACE}</FileHash>
+	<FileHash>{E3D617F0-0CC7-0094-829E-3F7680DD50E1}</FileHash>
 </SoundBanksInfo>

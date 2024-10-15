@@ -22,6 +22,12 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="BouncingVolume" ID="{66F90FD6-643D-46D6-95F7-DD9F9567A7DD}"/>
+				<GameParameter Name="ToggleFireWeaponSounds" ID="{D5B1DCE7-624D-46C5-8D40-BDF20C7FB0C7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
