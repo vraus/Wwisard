@@ -3,14 +3,14 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "SoundBanks": [
    {
     "Id": "2122995345",
     "Type": "Event",
     "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
     "Language": "SFX",
-    "Hash": "{C1F623F1-28B1-1A2B-4DA9-DCF88DE0B1D0}",
+    "Hash": "{EA0B7795-15A3-FF07-3473-7003D3DA8B2B}",
     "ObjectPath": "OpenDoor",
     "ShortName": "OpenDoor",
     "Path": "Event/OpenDoor.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "sliding-door-opening-and-closing-6467.wav",
       "Path": "Media/724664712.wem",
-      "CachePath": "SFX/sliding-door-opening-and-closing-6467_22F49C30.wem"
+      "CachePath": "85/{852363AA-9EC5-1F8E-E5AC-24B10159D268}.wem"
      }
     ],
     "Events": [
@@ -31,6 +31,7 @@
       "Name": "OpenDoor",
       "ObjectPath": "\\Events\\Default Work Unit\\OpenDoor",
       "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "1.9076208",
@@ -44,6 +45,6 @@
     ]
    }
   ],
-  "FileHash": "{2341A052-3E9F-0334-7282-8D602781D3FD}"
+  "FileHash": "{B61006A6-7DF4-2555-4FAC-62DE3059BE04}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="860695061" Type="Event" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" Language="SFX" Hash="{CADFF4DC-952A-B8E7-C1D2-A55F3DCC694D}">
+		<SoundBank Id="860695061" Type="Event" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" Language="SFX" Hash="{CB737870-51EF-3C0E-7749-2920531B4D64}">
 			<ObjectPath>BulletBounce</ObjectPath>
 			<ShortName>BulletBounce</ShortName>
 			<Path>Event/BulletBounce.bnk</Path>
@@ -9,11 +9,11 @@
 				<File Id="1051472599" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>bouncing-ball-sfx-215265.wav</ShortName>
 					<Path>Media/1051472599.wem</Path>
-					<CachePath>SFX/bouncing-ball-sfx-215265_2B6F3743.wem</CachePath>
+					<CachePath>9D/{9D95E950-FDBE-37A9-0970-8CD3F34E6640}.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="860695061" Name="BulletBounce" ObjectPath="\Events\Default Work Unit\BulletBounce" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.4094983" DurationMax="0.4094983">
+				<Event Id="860695061" Name="BulletBounce" ObjectPath="\Events\Default Work Unit\BulletBounce" GUID="{F1B67F16-1937-4FAC-8CAF-2A1534F97160}" Color="2" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.4094983" DurationMax="0.4094983">
 					<MediaRefs>
 						<MediaRef Id="1051472599"/>
 					</MediaRefs>
@@ -24,5 +24,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{AB35F670-84A8-5B47-8C03-EAF369AF6924}</FileHash>
+	<FileHash>{40816E4C-B83D-874A-532C-8DBF3A607007}</FileHash>
 </SoundBanksInfo>

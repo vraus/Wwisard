@@ -3,14 +3,14 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "SoundBanks": [
    {
     "Id": "1355168291",
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{073C86FD-0BE6-9C50-032C-33E636C6F377}",
+    "Hash": "{D89750FA-1CFD-D513-2CA2-D32C10322209}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -39,13 +39,15 @@
       "Id": "493417818",
       "Name": "Music Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music Audio Bus",
-      "GUID": "{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}"
+      "GUID": "{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}",
+      "Color": "12"
      },
      {
       "Id": "527200915",
       "Name": "FX Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\FX Audio Bus",
-      "GUID": "{4F841DF4-9F47-4390-972E-BEEEBBB62351}"
+      "GUID": "{4F841DF4-9F47-4390-972E-BEEEBBB62351}",
+      "Color": "2"
      },
      {
       "Id": "3803692087",
@@ -116,6 +118,6 @@
     ]
    }
   ],
-  "FileHash": "{6AA3CB67-6DE4-5970-B0C1-CAE1146F4636}"
+  "FileHash": "{88CD83BB-FCE6-2A8E-748C-54D0E2EDB0D7}"
  }
 }

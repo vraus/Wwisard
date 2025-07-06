@@ -3,14 +3,14 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "SoundBanks": [
    {
     "Id": "1817205545",
     "Type": "Event",
     "GUID": "{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}",
     "Language": "SFX",
-    "Hash": "{728E5E86-1C5F-222F-7EB8-276E694F01C9}",
+    "Hash": "{DE3EB88A-ED31-67F4-974E-26273822A13B}",
     "ObjectPath": "ChafermBeep",
     "ShortName": "ChafermBeep",
     "Path": "Event/ChafermBeep.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "one_beep-99630.wav",
       "Path": "Media/233372072.wem",
-      "CachePath": "SFX/one_beep-99630_3F6A6223.wem"
+      "CachePath": "EA/{EA8400F4-CFC6-9900-BE78-719E6637829C}.wem"
      },
      {
       "Id": "700142031",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "electric-sparks-6130.wav",
       "Path": "Media/700142031.wem",
-      "CachePath": "SFX/electric-sparks-6130_FD292F9C.wem"
+      "CachePath": "6A/{6A5A3A99-D1A1-DF69-46E6-52B4E87E889A}.wem"
      }
     ],
     "Events": [
@@ -40,6 +40,7 @@
       "Name": "ChafermBeep",
       "ObjectPath": "\\Events\\Default Work Unit\\ChafermBeep",
       "GUID": "{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.25",
@@ -56,6 +57,6 @@
     ]
    }
   ],
-  "FileHash": "{D0575399-FFBE-5B0E-522E-8AC4630C7B2D}"
+  "FileHash": "{479F4DBB-ED5B-8803-4FC2-D32841520EEB}"
  }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{073C86FD-0BE6-9C50-032C-33E636C6F377}">
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{D89750FA-1CFD-D513-2CA2-D32C10322209}">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -12,8 +12,8 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="493417818" Name="Music Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music Audio Bus" GUID="{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}"/>
-				<Bus Id="527200915" Name="FX Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\FX Audio Bus" GUID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}"/>
+				<Bus Id="493417818" Name="Music Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music Audio Bus" GUID="{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}" Color="12"/>
+				<Bus Id="527200915" Name="FX Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\FX Audio Bus" GUID="{4F841DF4-9F47-4390-972E-BEEEBBB62351}" Color="2"/>
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 			<GameParameters>
@@ -34,5 +34,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DFBE6158-0841-CE9C-1C97-FFCFC34315BD}</FileHash>
+	<FileHash>{188C686E-4DDF-9817-6A90-807C6C0EFCFB}</FileHash>
 </SoundBanksInfo>

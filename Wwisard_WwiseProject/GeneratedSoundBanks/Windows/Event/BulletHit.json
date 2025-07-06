@@ -3,14 +3,14 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "SoundBanks": [
    {
     "Id": "4179333400",
     "Type": "Event",
     "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
     "Language": "SFX",
-    "Hash": "{3208D56A-884A-9DAA-53B2-B310B299EFB3}",
+    "Hash": "{5FF75769-9037-A6B8-0299-776B06AB9115}",
     "ObjectPath": "BulletHit",
     "ShortName": "BulletHit",
     "Path": "Event/BulletHit.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "bullet-hit-metal-84818.wav",
       "Path": "Media/732227477.wem",
-      "CachePath": "SFX/bullet-hit-metal-84818_276A84B2.wem"
+      "CachePath": "80/{80E3A8FF-3D57-6F7D-194A-6C1AD7F8A9B4}.wem"
      }
     ],
     "Events": [
@@ -31,6 +31,7 @@
       "Name": "BulletHit",
       "ObjectPath": "\\Events\\Default Work Unit\\BulletHit",
       "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.42237842",
@@ -44,6 +45,6 @@
     ]
    }
   ],
-  "FileHash": "{78F86901-F018-9E4B-316E-FA7CD1163172}"
+  "FileHash": "{5D1C5369-B849-BBE0-090E-D82DF203D352}"
  }
 }

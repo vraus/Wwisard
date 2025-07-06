@@ -3,10 +3,10 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "RootPaths": {
    "ProjectRoot": "../..",
-   "SourceFilesRoot": "../../.cache/Windows",
+   "SourceFilesRoot": "../../.cache",
    "SoundBanksRoot": ".",
    "ExternalSourcesInputFile": "",
    "ExternalSourcesOutputRoot": "."
@@ -18,7 +18,7 @@
     "Type": "Event",
     "GUID": "{F1B67F16-1937-4FAC-8CAF-2A1534F97160}",
     "Language": "SFX",
-    "Hash": "{CADFF4DC-952A-B8E7-C1D2-A55F3DCC694D}",
+    "Hash": "{CB737870-51EF-3C0E-7749-2920531B4D64}",
     "ObjectPath": "BulletBounce",
     "ShortName": "BulletBounce",
     "Path": "Event/BulletBounce.bnk",
@@ -30,7 +30,7 @@
       "Location": "Loose",
       "ShortName": "bouncing-ball-sfx-215265.wav",
       "Path": "Media/1051472599.wem",
-      "CachePath": "SFX/bouncing-ball-sfx-215265_2B6F3743.wem"
+      "CachePath": "9D/{9D95E950-FDBE-37A9-0970-8CD3F34E6640}.wem"
      }
     ],
     "Events": [
@@ -39,6 +39,7 @@
       "Name": "BulletBounce",
       "ObjectPath": "\\Events\\Default Work Unit\\BulletBounce",
       "GUID": "{F1B67F16-1937-4FAC-8CAF-2A1534F97160}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.4094983",
@@ -64,7 +65,7 @@
     "Type": "Event",
     "GUID": "{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}",
     "Language": "SFX",
-    "Hash": "{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}",
+    "Hash": "{8DF088EC-6828-DF19-759F-1BBA9583D103}",
     "ObjectPath": "FireWeapon",
     "ShortName": "FireWeapon",
     "Path": "Event/FireWeapon.bnk",
@@ -76,7 +77,7 @@
       "Location": "Loose",
       "ShortName": "FirstPersonTemplateWeaponFire02.WAV",
       "Path": "Media/34711518.wem",
-      "CachePath": "SFX/FirstPersonTemplateWeaponFire02_818F3B66.wem"
+      "CachePath": "C2/{C257050C-9152-4781-BE37-46E85C92F027}.wem"
      }
     ],
     "Events": [
@@ -85,6 +86,7 @@
       "Name": "FireWeapon",
       "ObjectPath": "\\Events\\Default Work Unit\\FireWeapon",
       "GUID": "{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}",
+      "Color": "2",
       "DurationType": "OneShot",
       "DurationMin": "1.7021542",
       "DurationMax": "1.7021542",
@@ -109,7 +111,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{073C86FD-0BE6-9C50-032C-33E636C6F377}",
+    "Hash": "{D89750FA-1CFD-D513-2CA2-D32C10322209}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -138,13 +140,15 @@
       "Id": "493417818",
       "Name": "Music Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music Audio Bus",
-      "GUID": "{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}"
+      "GUID": "{AA7DA055-5EA3-4FF0-8DEE-A8267DD2F9B8}",
+      "Color": "12"
      },
      {
       "Id": "527200915",
       "Name": "FX Audio Bus",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\FX Audio Bus",
-      "GUID": "{4F841DF4-9F47-4390-972E-BEEEBBB62351}"
+      "GUID": "{4F841DF4-9F47-4390-972E-BEEEBBB62351}",
+      "Color": "2"
      },
      {
       "Id": "3803692087",
@@ -219,7 +223,7 @@
     "Type": "Event",
     "GUID": "{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}",
     "Language": "SFX",
-    "Hash": "{728E5E86-1C5F-222F-7EB8-276E694F01C9}",
+    "Hash": "{DE3EB88A-ED31-67F4-974E-26273822A13B}",
     "ObjectPath": "ChafermBeep",
     "ShortName": "ChafermBeep",
     "Path": "Event/ChafermBeep.bnk",
@@ -231,7 +235,7 @@
       "Location": "Loose",
       "ShortName": "one_beep-99630.wav",
       "Path": "Media/233372072.wem",
-      "CachePath": "SFX/one_beep-99630_3F6A6223.wem"
+      "CachePath": "EA/{EA8400F4-CFC6-9900-BE78-719E6637829C}.wem"
      },
      {
       "Id": "700142031",
@@ -240,7 +244,7 @@
       "Location": "Loose",
       "ShortName": "electric-sparks-6130.wav",
       "Path": "Media/700142031.wem",
-      "CachePath": "SFX/electric-sparks-6130_FD292F9C.wem"
+      "CachePath": "6A/{6A5A3A99-D1A1-DF69-46E6-52B4E87E889A}.wem"
      }
     ],
     "Events": [
@@ -249,6 +253,7 @@
       "Name": "ChafermBeep",
       "ObjectPath": "\\Events\\Default Work Unit\\ChafermBeep",
       "GUID": "{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.25",
@@ -269,7 +274,7 @@
     "Type": "Event",
     "GUID": "{21F30C64-56CE-4846-9530-C7AA5224C5C1}",
     "Language": "SFX",
-    "Hash": "{EC18C7E6-5A4F-B33F-64AF-7D6EC75BC365}",
+    "Hash": "{7EF3E3D9-FECD-4187-590D-4E7C6A2BC6EB}",
     "ObjectPath": "AmbientMusic",
     "ShortName": "AmbientMusic",
     "Path": "Event/AmbientMusic.bnk",
@@ -281,7 +286,7 @@
       "Location": "Loose",
       "ShortName": "SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT_.wav",
       "Path": "Media/583460684.wem",
-      "CachePath": "SFX/SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT__818F3B66.wem"
+      "CachePath": "1C/{1CCBA8CA-A735-D227-A48B-D3F2BD7C5FD2}.wem"
      }
     ],
     "Events": [
@@ -290,6 +295,7 @@
       "Name": "AmbientMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\AmbientMusic",
       "GUID": "{21F30C64-56CE-4846-9530-C7AA5224C5C1}",
+      "Color": "12",
       "DurationType": "OneShot",
       "DurationMin": "331.83636",
       "DurationMax": "331.83636",
@@ -306,7 +312,7 @@
     "Type": "Event",
     "GUID": "{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}",
     "Language": "SFX",
-    "Hash": "{FB2ED804-8D32-41BB-C83C-8EF9A0AED696}",
+    "Hash": "{1279D45D-2511-2A94-FCD2-CA5B2B6E3020}",
     "ObjectPath": "FootStep",
     "ShortName": "FootStep",
     "Path": "Event/FootStep.bnk",
@@ -318,7 +324,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_grass_4.wav",
       "Path": "Media/116923400.wem",
-      "CachePath": "SFX/Footstep_grass_4_818F3B66.wem"
+      "CachePath": "07/{077F9132-10A2-87CF-5079-85821B0FD43F}.wem"
      },
      {
       "Id": "179702132",
@@ -327,7 +333,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_5.wav",
       "Path": "Media/179702132.wem",
-      "CachePath": "SFX/Footstep_Concrete_5_598A0699.wem"
+      "CachePath": "99/{991CDC9B-7D7E-05E4-912E-76239FF458AE}.wem"
      },
      {
       "Id": "188402426",
@@ -336,7 +342,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_4.wav",
       "Path": "Media/188402426.wem",
-      "CachePath": "SFX/Footstep_Wood_4_818F3B66.wem"
+      "CachePath": "9E/{9EF5B934-B8CC-7038-661E-1A085FD0BC82}.wem"
      },
      {
       "Id": "354417827",
@@ -345,7 +351,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_6.wav",
       "Path": "Media/354417827.wem",
-      "CachePath": "SFX/Footstep_Grass_6_818F3B66.wem"
+      "CachePath": "5A/{5A90DFF6-9B4B-1283-F825-F83FFABBDDFF}.wem"
      },
      {
       "Id": "388935645",
@@ -354,7 +360,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_5.wav",
       "Path": "Media/388935645.wem",
-      "CachePath": "SFX/Footstep_Grass_5_818F3B66.wem"
+      "CachePath": "D0/{D0846649-0473-63DF-F957-3FBF5E42287B}.wem"
      },
      {
       "Id": "390052351",
@@ -363,7 +369,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_3.wav",
       "Path": "Media/390052351.wem",
-      "CachePath": "SFX/Footstep_Concrete_3_1FFA51C2.wem"
+      "CachePath": "23/{23B67D98-8807-E533-5BFC-D8BC07841E2E}.wem"
      },
      {
       "Id": "487390353",
@@ -372,7 +378,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_7.wav",
       "Path": "Media/487390353.wem",
-      "CachePath": "SFX/Footstep_Grass_7_818F3B66.wem"
+      "CachePath": "A5/{A5BD617F-A214-0500-4B4C-AA8B7FE6C962}.wem"
      },
      {
       "Id": "536034736",
@@ -381,7 +387,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_1.wav",
       "Path": "Media/536034736.wem",
-      "CachePath": "SFX/Footstep_Wood_1_818F3B66.wem"
+      "CachePath": "57/{57B18B4E-49F0-6EAD-15FE-0FF9BA2D6A31}.wem"
      },
      {
       "Id": "664146806",
@@ -390,7 +396,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_4.wav",
       "Path": "Media/664146806.wem",
-      "CachePath": "SFX/Footstep_Concrete_4_818F3B66.wem"
+      "CachePath": "67/{67E021B4-F685-5E47-1BD6-2E111190705D}.wem"
      },
      {
       "Id": "698401089",
@@ -399,7 +405,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_1.wav",
       "Path": "Media/698401089.wem",
-      "CachePath": "SFX/Footstep_Grass_1_818F3B66.wem"
+      "CachePath": "99/{999170DE-2CAE-61D4-BD3B-A18A995EA7BB}.wem"
      },
      {
       "Id": "731008187",
@@ -408,7 +414,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_2.wav",
       "Path": "Media/731008187.wem",
-      "CachePath": "SFX/Footstep_Grass_2_818F3B66.wem"
+      "CachePath": "60/{60012986-EF3E-CA08-974C-5A5D25833FF3}.wem"
      },
      {
       "Id": "731156413",
@@ -417,7 +423,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_2.wav",
       "Path": "Media/731156413.wem",
-      "CachePath": "SFX/Footstep_Concrete_2_24B5B72B.wem"
+      "CachePath": "22/{22F7D0CC-48FF-EFBE-F36F-2B0FDD789516}.wem"
      },
      {
       "Id": "745492591",
@@ -426,7 +432,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_6.wav",
       "Path": "Media/745492591.wem",
-      "CachePath": "SFX/Footstep_Concrete_6_660017D5.wem"
+      "CachePath": "A8/{A8C0C1E8-84C6-8074-A65A-F35EB987FA80}.wem"
      },
      {
       "Id": "775377425",
@@ -435,7 +441,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_5.wav",
       "Path": "Media/775377425.wem",
-      "CachePath": "SFX/Footstep_Wood_5_818F3B66.wem"
+      "CachePath": "EF/{EF9C993C-3667-0A71-0284-510FE617EA71}.wem"
      },
      {
       "Id": "873521538",
@@ -444,7 +450,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Grass_3.wav",
       "Path": "Media/873521538.wem",
-      "CachePath": "SFX/Footstep_Grass_3_818F3B66.wem"
+      "CachePath": "17/{1762C4CE-C136-A734-DAD7-66C5F609655A}.wem"
      },
      {
       "Id": "882099037",
@@ -453,7 +459,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_1.wav",
       "Path": "Media/882099037.wem",
-      "CachePath": "SFX/Footstep_Concrete_1_818F3B66.wem"
+      "CachePath": "EF/{EF5013AE-D019-6530-6B2C-71F386C6D2C3}.wem"
      },
      {
       "Id": "896180110",
@@ -462,7 +468,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Concrete_7.wav",
       "Path": "Media/896180110.wem",
-      "CachePath": "SFX/Footstep_Concrete_7_52176B89.wem"
+      "CachePath": "E3/{E3702022-3A84-2E7C-B855-A7F470B5C13C}.wem"
      },
      {
       "Id": "1028943187",
@@ -471,7 +477,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_3.wav",
       "Path": "Media/1028943187.wem",
-      "CachePath": "SFX/Footstep_Wood_3_818F3B66.wem"
+      "CachePath": "E4/{E4AF0A95-1B3A-4F06-1B9F-7BF98BE6AE6D}.wem"
      },
      {
       "Id": "1035411044",
@@ -480,7 +486,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_6.wav",
       "Path": "Media/1035411044.wem",
-      "CachePath": "SFX/Footstep_Wood_6_818F3B66.wem"
+      "CachePath": "6F/{6F8F203C-4387-D10F-3EBD-81D584E9E59E}.wem"
      },
      {
       "Id": "1059911920",
@@ -489,7 +495,7 @@
       "Location": "Loose",
       "ShortName": "Footstep_Wood_7.wav",
       "Path": "Media/1059911920.wem",
-      "CachePath": "SFX/Footstep_Wood_7_818F3B66.wem"
+      "CachePath": "60/{6057991A-3A98-04D3-2237-F59AEA81DAD4}.wem"
      }
     ],
     "Plugins": {
@@ -510,6 +516,7 @@
       "Name": "FootStep",
       "ObjectPath": "\\Events\\Default Work Unit\\FootStep",
       "GUID": "{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}",
+      "Color": "2",
       "DurationType": "OneShot",
       "DurationMin": "0.2856015",
       "DurationMax": "0.8110312",
@@ -649,7 +656,7 @@
     "Type": "Event",
     "GUID": "{9D462B41-38B0-48D7-B570-355FB57A16AD}",
     "Language": "SFX",
-    "Hash": "{63572BD8-A608-4B23-5343-0DC671E72C02}",
+    "Hash": "{75CE575F-DCE9-6316-E1E3-38217F395639}",
     "ObjectPath": "JumpLanding",
     "ShortName": "JumpLanding",
     "Path": "Event/JumpLanding.bnk",
@@ -661,7 +668,7 @@
       "Location": "Loose",
       "ShortName": "thump-105302.wav",
       "Path": "Media/346152113.wem",
-      "CachePath": "SFX/thump-105302_818F3B66.wem"
+      "CachePath": "00/{00DE0487-47D6-E6FF-6FD5-BEB61B7721C5}.wem"
      }
     ],
     "Events": [
@@ -670,6 +677,7 @@
       "Name": "JumpLanding",
       "ObjectPath": "\\Events\\Default Work Unit\\JumpLanding",
       "GUID": "{9D462B41-38B0-48D7-B570-355FB57A16AD}",
+      "Color": "2",
       "DurationType": "OneShot",
       "DurationMin": "1.464",
       "DurationMax": "1.464",
@@ -686,7 +694,7 @@
     "Type": "Event",
     "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
     "Language": "SFX",
-    "Hash": "{C1F623F1-28B1-1A2B-4DA9-DCF88DE0B1D0}",
+    "Hash": "{EA0B7795-15A3-FF07-3473-7003D3DA8B2B}",
     "ObjectPath": "OpenDoor",
     "ShortName": "OpenDoor",
     "Path": "Event/OpenDoor.bnk",
@@ -698,7 +706,7 @@
       "Location": "Loose",
       "ShortName": "sliding-door-opening-and-closing-6467.wav",
       "Path": "Media/724664712.wem",
-      "CachePath": "SFX/sliding-door-opening-and-closing-6467_22F49C30.wem"
+      "CachePath": "85/{852363AA-9EC5-1F8E-E5AC-24B10159D268}.wem"
      }
     ],
     "Events": [
@@ -707,6 +715,7 @@
       "Name": "OpenDoor",
       "ObjectPath": "\\Events\\Default Work Unit\\OpenDoor",
       "GUID": "{2320DF26-4D6C-4BD9-841B-0B542901A6F8}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "1.9076208",
@@ -724,7 +733,7 @@
     "Type": "Event",
     "GUID": "{772C47DF-A728-4DCB-93D8-2DE78621CD7C}",
     "Language": "SFX",
-    "Hash": "{D014960F-A712-10A9-7427-40D6B06812D4}",
+    "Hash": "{47C5135C-8D93-D7A7-EABA-7252978FC332}",
     "ObjectPath": "PickupWeapon",
     "ShortName": "PickupWeapon",
     "Path": "Event/PickupWeapon.bnk",
@@ -736,7 +745,7 @@
       "Location": "Loose",
       "ShortName": "pickup_item-64282.wav",
       "Path": "Media/318083971.wem",
-      "CachePath": "SFX/pickup_item-64282_A0A54593.wem"
+      "CachePath": "FC/{FC67B0DE-D01E-C1D4-FA8F-833D8BBCBC31}.wem"
      }
     ],
     "Events": [
@@ -745,6 +754,7 @@
       "Name": "PickupWeapon",
       "ObjectPath": "\\Events\\Default Work Unit\\PickupWeapon",
       "GUID": "{772C47DF-A728-4DCB-93D8-2DE78621CD7C}",
+      "Color": "2",
       "DurationType": "OneShot",
       "DurationMin": "0.65628624",
       "DurationMax": "0.65628624",
@@ -761,7 +771,7 @@
     "Type": "Event",
     "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
     "Language": "SFX",
-    "Hash": "{3208D56A-884A-9DAA-53B2-B310B299EFB3}",
+    "Hash": "{5FF75769-9037-A6B8-0299-776B06AB9115}",
     "ObjectPath": "BulletHit",
     "ShortName": "BulletHit",
     "Path": "Event/BulletHit.bnk",
@@ -773,7 +783,7 @@
       "Location": "Loose",
       "ShortName": "bullet-hit-metal-84818.wav",
       "Path": "Media/732227477.wem",
-      "CachePath": "SFX/bullet-hit-metal-84818_276A84B2.wem"
+      "CachePath": "80/{80E3A8FF-3D57-6F7D-194A-6C1AD7F8A9B4}.wem"
      }
     ],
     "Events": [
@@ -782,6 +792,7 @@
       "Name": "BulletHit",
       "ObjectPath": "\\Events\\Default Work Unit\\BulletHit",
       "GUID": "{3185C608-F2C4-479F-9882-F5037C32C36F}",
+      "Color": "2",
       "MaxAttenuation": "5000",
       "DurationType": "OneShot",
       "DurationMin": "0.42237842",
@@ -795,6 +806,6 @@
     ]
    }
   ],
-  "FileHash": "{636A1557-15A6-A79D-1963-BF0E1D0B21C1}"
+  "FileHash": "{E52FBACC-2EBE-D115-4588-107584BFA56C}"
  }
 }

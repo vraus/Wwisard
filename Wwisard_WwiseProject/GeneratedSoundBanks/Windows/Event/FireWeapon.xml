@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}">
+		<SoundBank Id="1283499417" Type="Event" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Language="SFX" Hash="{8DF088EC-6828-DF19-759F-1BBA9583D103}">
 			<ObjectPath>FireWeapon</ObjectPath>
 			<ShortName>FireWeapon</ShortName>
 			<Path>Event/FireWeapon.bnk</Path>
@@ -9,11 +9,11 @@
 				<File Id="34711518" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>FirstPersonTemplateWeaponFire02.WAV</ShortName>
 					<Path>Media/34711518.wem</Path>
-					<CachePath>SFX/FirstPersonTemplateWeaponFire02_818F3B66.wem</CachePath>
+					<CachePath>C2/{C257050C-9152-4781-BE37-46E85C92F027}.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1283499417" Name="FireWeapon" ObjectPath="\Events\Default Work Unit\FireWeapon" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" DurationType="OneShot" DurationMin="1.7021542" DurationMax="1.7021542">
+				<Event Id="1283499417" Name="FireWeapon" ObjectPath="\Events\Default Work Unit\FireWeapon" GUID="{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}" Color="2" DurationType="OneShot" DurationMin="1.7021542" DurationMax="1.7021542">
 					<MediaRefs>
 						<MediaRef Id="34711518"/>
 					</MediaRefs>
@@ -24,5 +24,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F731C01D-9CE5-31DA-301D-49DBE0B84379}</FileHash>
+	<FileHash>{476414E9-BF3E-174F-F294-FAE83243C3E4}</FileHash>
 </SoundBanksInfo>

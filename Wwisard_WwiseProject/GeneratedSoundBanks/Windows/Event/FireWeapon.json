@@ -3,14 +3,14 @@
   "Platform": "Windows",
   "BasePlatform": "Windows",
   "SchemaVersion": "16",
-  "SoundBankVersion": "150",
+  "SoundBankVersion": "154",
   "SoundBanks": [
    {
     "Id": "1283499417",
     "Type": "Event",
     "GUID": "{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}",
     "Language": "SFX",
-    "Hash": "{C3EE5E18-01F9-74C2-11ED-4ED27BDD07C2}",
+    "Hash": "{8DF088EC-6828-DF19-759F-1BBA9583D103}",
     "ObjectPath": "FireWeapon",
     "ShortName": "FireWeapon",
     "Path": "Event/FireWeapon.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "FirstPersonTemplateWeaponFire02.WAV",
       "Path": "Media/34711518.wem",
-      "CachePath": "SFX/FirstPersonTemplateWeaponFire02_818F3B66.wem"
+      "CachePath": "C2/{C257050C-9152-4781-BE37-46E85C92F027}.wem"
      }
     ],
     "Events": [
@@ -31,6 +31,7 @@
       "Name": "FireWeapon",
       "ObjectPath": "\\Events\\Default Work Unit\\FireWeapon",
       "GUID": "{34304AE6-A61C-428C-BF9F-5C71A9CAD44C}",
+      "Color": "2",
       "DurationType": "OneShot",
       "DurationMin": "1.7021542",
       "DurationMax": "1.7021542",
@@ -51,6 +52,6 @@
     ]
    }
   ],
-  "FileHash": "{717B3491-F033-9F49-30AD-B4F19ABEE4F3}"
+  "FileHash": "{28B339BA-478D-4CC2-8A1D-B52780C2E033}"
  }
 }

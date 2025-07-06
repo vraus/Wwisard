@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{728E5E86-1C5F-222F-7EB8-276E694F01C9}">
+		<SoundBank Id="1817205545" Type="Event" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Language="SFX" Hash="{DE3EB88A-ED31-67F4-974E-26273822A13B}">
 			<ObjectPath>ChafermBeep</ObjectPath>
 			<ShortName>ChafermBeep</ShortName>
 			<Path>Event/ChafermBeep.bnk</Path>
@@ -9,16 +9,16 @@
 				<File Id="233372072" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>one_beep-99630.wav</ShortName>
 					<Path>Media/233372072.wem</Path>
-					<CachePath>SFX/one_beep-99630_3F6A6223.wem</CachePath>
+					<CachePath>EA/{EA8400F4-CFC6-9900-BE78-719E6637829C}.wem</CachePath>
 				</File>
 				<File Id="700142031" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>electric-sparks-6130.wav</ShortName>
 					<Path>Media/700142031.wem</Path>
-					<CachePath>SFX/electric-sparks-6130_FD292F9C.wem</CachePath>
+					<CachePath>6A/{6A5A3A99-D1A1-DF69-46E6-52B4E87E889A}.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
+				<Event Id="1817205545" Name="ChafermBeep" ObjectPath="\Events\Default Work Unit\ChafermBeep" GUID="{29FB6CD2-4F97-454D-A7FE-FD8B5606A6ED}" Color="2" MaxAttenuation="5000" DurationType="OneShot" DurationMin="0.25" DurationMax="0.25">
 					<MediaRefs>
 						<MediaRef Id="233372072"/>
 						<MediaRef Id="700142031"/>
@@ -27,5 +27,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7E045E2D-1080-0369-D54F-26ABB172144D}</FileHash>
+	<FileHash>{3D6CF9AD-A014-D67F-2533-19B5275AB4C9}</FileHash>
 </SoundBanksInfo>

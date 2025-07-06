@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="1849502000" Type="Event" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" Language="SFX" Hash="{EC18C7E6-5A4F-B33F-64AF-7D6EC75BC365}">
+		<SoundBank Id="1849502000" Type="Event" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" Language="SFX" Hash="{7EF3E3D9-FECD-4187-590D-4E7C6A2BC6EB}">
 			<ObjectPath>AmbientMusic</ObjectPath>
 			<ShortName>AmbientMusic</ShortName>
 			<Path>Event/AmbientMusic.bnk</Path>
@@ -9,11 +9,11 @@
 				<File Id="583460684" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT_.wav</ShortName>
 					<Path>Media/583460684.wem</Path>
-					<CachePath>SFX/SciFi-Music-for-YouTube-videos-_-NO-COPYRIGHT__818F3B66.wem</CachePath>
+					<CachePath>1C/{1CCBA8CA-A735-D227-A48B-D3F2BD7C5FD2}.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1849502000" Name="AmbientMusic" ObjectPath="\Events\Default Work Unit\AmbientMusic" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" DurationType="OneShot" DurationMin="331.83636" DurationMax="331.83636">
+				<Event Id="1849502000" Name="AmbientMusic" ObjectPath="\Events\Default Work Unit\AmbientMusic" GUID="{21F30C64-56CE-4846-9530-C7AA5224C5C1}" Color="12" DurationType="OneShot" DurationMin="331.83636" DurationMax="331.83636">
 					<MediaRefs>
 						<MediaRef Id="583460684"/>
 					</MediaRefs>
@@ -21,5 +21,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F422DE9F-C806-1FE0-0704-0C888FF35A22}</FileHash>
+	<FileHash>{3A2A9DB3-E485-B367-37C7-05BBD6FB178E}</FileHash>
 </SoundBanksInfo>

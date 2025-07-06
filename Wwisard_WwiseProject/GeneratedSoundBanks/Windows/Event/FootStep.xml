@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
 	<SoundBanks>
-		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{FB2ED804-8D32-41BB-C83C-8EF9A0AED696}">
+		<SoundBank Id="1866025847" Type="Event" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Language="SFX" Hash="{1279D45D-2511-2A94-FCD2-CA5B2B6E3020}">
 			<ObjectPath>FootStep</ObjectPath>
 			<ShortName>FootStep</ShortName>
 			<Path>Event/FootStep.bnk</Path>
@@ -9,102 +9,102 @@
 				<File Id="116923400" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_grass_4.wav</ShortName>
 					<Path>Media/116923400.wem</Path>
-					<CachePath>SFX/Footstep_grass_4_818F3B66.wem</CachePath>
+					<CachePath>07/{077F9132-10A2-87CF-5079-85821B0FD43F}.wem</CachePath>
 				</File>
 				<File Id="179702132" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_5.wav</ShortName>
 					<Path>Media/179702132.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_5_598A0699.wem</CachePath>
+					<CachePath>99/{991CDC9B-7D7E-05E4-912E-76239FF458AE}.wem</CachePath>
 				</File>
 				<File Id="188402426" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_4.wav</ShortName>
 					<Path>Media/188402426.wem</Path>
-					<CachePath>SFX/Footstep_Wood_4_818F3B66.wem</CachePath>
+					<CachePath>9E/{9EF5B934-B8CC-7038-661E-1A085FD0BC82}.wem</CachePath>
 				</File>
 				<File Id="354417827" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_6.wav</ShortName>
 					<Path>Media/354417827.wem</Path>
-					<CachePath>SFX/Footstep_Grass_6_818F3B66.wem</CachePath>
+					<CachePath>5A/{5A90DFF6-9B4B-1283-F825-F83FFABBDDFF}.wem</CachePath>
 				</File>
 				<File Id="388935645" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_5.wav</ShortName>
 					<Path>Media/388935645.wem</Path>
-					<CachePath>SFX/Footstep_Grass_5_818F3B66.wem</CachePath>
+					<CachePath>D0/{D0846649-0473-63DF-F957-3FBF5E42287B}.wem</CachePath>
 				</File>
 				<File Id="390052351" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_3.wav</ShortName>
 					<Path>Media/390052351.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_3_1FFA51C2.wem</CachePath>
+					<CachePath>23/{23B67D98-8807-E533-5BFC-D8BC07841E2E}.wem</CachePath>
 				</File>
 				<File Id="487390353" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_7.wav</ShortName>
 					<Path>Media/487390353.wem</Path>
-					<CachePath>SFX/Footstep_Grass_7_818F3B66.wem</CachePath>
+					<CachePath>A5/{A5BD617F-A214-0500-4B4C-AA8B7FE6C962}.wem</CachePath>
 				</File>
 				<File Id="536034736" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_1.wav</ShortName>
 					<Path>Media/536034736.wem</Path>
-					<CachePath>SFX/Footstep_Wood_1_818F3B66.wem</CachePath>
+					<CachePath>57/{57B18B4E-49F0-6EAD-15FE-0FF9BA2D6A31}.wem</CachePath>
 				</File>
 				<File Id="664146806" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_4.wav</ShortName>
 					<Path>Media/664146806.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_4_818F3B66.wem</CachePath>
+					<CachePath>67/{67E021B4-F685-5E47-1BD6-2E111190705D}.wem</CachePath>
 				</File>
 				<File Id="698401089" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_1.wav</ShortName>
 					<Path>Media/698401089.wem</Path>
-					<CachePath>SFX/Footstep_Grass_1_818F3B66.wem</CachePath>
+					<CachePath>99/{999170DE-2CAE-61D4-BD3B-A18A995EA7BB}.wem</CachePath>
 				</File>
 				<File Id="731008187" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_2.wav</ShortName>
 					<Path>Media/731008187.wem</Path>
-					<CachePath>SFX/Footstep_Grass_2_818F3B66.wem</CachePath>
+					<CachePath>60/{60012986-EF3E-CA08-974C-5A5D25833FF3}.wem</CachePath>
 				</File>
 				<File Id="731156413" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_2.wav</ShortName>
 					<Path>Media/731156413.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_2_24B5B72B.wem</CachePath>
+					<CachePath>22/{22F7D0CC-48FF-EFBE-F36F-2B0FDD789516}.wem</CachePath>
 				</File>
 				<File Id="745492591" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_6.wav</ShortName>
 					<Path>Media/745492591.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_6_660017D5.wem</CachePath>
+					<CachePath>A8/{A8C0C1E8-84C6-8074-A65A-F35EB987FA80}.wem</CachePath>
 				</File>
 				<File Id="775377425" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_5.wav</ShortName>
 					<Path>Media/775377425.wem</Path>
-					<CachePath>SFX/Footstep_Wood_5_818F3B66.wem</CachePath>
+					<CachePath>EF/{EF9C993C-3667-0A71-0284-510FE617EA71}.wem</CachePath>
 				</File>
 				<File Id="873521538" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Grass_3.wav</ShortName>
 					<Path>Media/873521538.wem</Path>
-					<CachePath>SFX/Footstep_Grass_3_818F3B66.wem</CachePath>
+					<CachePath>17/{1762C4CE-C136-A734-DAD7-66C5F609655A}.wem</CachePath>
 				</File>
 				<File Id="882099037" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_1.wav</ShortName>
 					<Path>Media/882099037.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_1_818F3B66.wem</CachePath>
+					<CachePath>EF/{EF5013AE-D019-6530-6B2C-71F386C6D2C3}.wem</CachePath>
 				</File>
 				<File Id="896180110" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Concrete_7.wav</ShortName>
 					<Path>Media/896180110.wem</Path>
-					<CachePath>SFX/Footstep_Concrete_7_52176B89.wem</CachePath>
+					<CachePath>E3/{E3702022-3A84-2E7C-B855-A7F470B5C13C}.wem</CachePath>
 				</File>
 				<File Id="1028943187" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_3.wav</ShortName>
 					<Path>Media/1028943187.wem</Path>
-					<CachePath>SFX/Footstep_Wood_3_818F3B66.wem</CachePath>
+					<CachePath>E4/{E4AF0A95-1B3A-4F06-1B9F-7BF98BE6AE6D}.wem</CachePath>
 				</File>
 				<File Id="1035411044" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_6.wav</ShortName>
 					<Path>Media/1035411044.wem</Path>
-					<CachePath>SFX/Footstep_Wood_6_818F3B66.wem</CachePath>
+					<CachePath>6F/{6F8F203C-4387-D10F-3EBD-81D584E9E59E}.wem</CachePath>
 				</File>
 				<File Id="1059911920" Language="SFX" Streaming="false" Location="Loose">
 					<ShortName>Footstep_Wood_7.wav</ShortName>
 					<Path>Media/1059911920.wem</Path>
-					<CachePath>SFX/Footstep_Wood_7_818F3B66.wem</CachePath>
+					<CachePath>60/{6057991A-3A98-04D3-2237-F59AEA81DAD4}.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -113,7 +113,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" DurationType="OneShot" DurationMin="0.2856015" DurationMax="0.8110312">
+				<Event Id="1866025847" Name="FootStep" ObjectPath="\Events\Default Work Unit\FootStep" GUID="{1012BCEB-EB4B-40AC-A4B7-ACC91F015C12}" Color="2" DurationType="OneShot" DurationMin="0.2856015" DurationMax="0.8110312">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2385628198" Id="4248645337" GUID="{7246AC05-9DB3-4A21-B245-0681AF149C8C}"/>
@@ -169,5 +169,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DBBE7162-C6A1-8DCF-8490-DBE5DF862701}</FileHash>
+	<FileHash>{A5EA246B-FCE0-7C0C-6AA0-6FFB152E46B6}</FileHash>
 </SoundBanksInfo>
